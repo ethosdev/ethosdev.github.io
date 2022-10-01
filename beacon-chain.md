@@ -271,7 +271,7 @@ In any voluntary or forced exit, there is a delay of four epochs before stakers 
 
 Further technical details are described in [A note on Ethereum 2.0 phase 0 validator lifecycle](https://notes.ethereum.org/7CFxjwMgQSWOHIxLgJP2Bw#A-note-on-Ethereum-20-phase-0-validator-lifecycle) including this flowchart:
 
-![Beacon Chain Validator Lifecycle](images/Beacon-Chain-Validator-Lifecycle-1.png)
+![Beacon Chain Validator Lifecycle](images/Beacon-Chain-Validator-Lifecycle.png)
 
 To avoid large changes in the validator set in a short amount of time, there are mechanisms limiting how many validators can be activated or exited within an epoch.  For example, these make it more difficult to activate many validators quickly to attack the system.
 
