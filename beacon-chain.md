@@ -2,6 +2,7 @@
 layout: page
 title: "The Beacon Chain Ethereum 2.0 explainer you need to read first"
 permalink: /beacon-chain/
+description: Ethereum's Beacon Chain from staking validators to finality. Explained with examples, key details at the right level to make you proficient and save time.
 ---
 
 Remember the joy you felt when you started getting _aha moments_ about blockchains?
