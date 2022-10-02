@@ -23,7 +23,7 @@ A slot is a chance for a block to be added to the Beacon Chain. Every 12 seconds
 
 A slot is like the block time, but slots can be empty. The Beacon Chain genesis block is at Slot 0.
 
-## **Introduction to Validators, Attestations, and the Beacon Chain**
+## **Validators and Attestations**
 
 While Proof of Work (PoW) is associated with miners, Ethereum's validators are Proof of Stake "virtual miners". Validators run Ethereum's consensus. Their incentives are discussed later in [Staking Rewards and Penalties](#rewards-penalties).
 
