@@ -39,19 +39,19 @@ While Proof of Work (PoW) is associated with miners, in Ethereum 2.0 validators 
 
 A block **proposer** is a validator that has been pseudorandomly selected to build a block.
 
-Most of the time, validators are **attesters** that vote on beacon blocks and shard blocks.  These votes are recorded in the Beacon Chain. The votes determine the head of the Beacon Chain, and the heads of shards.
+Most of the time, validators are **attesters** that vote on blocks.  These votes are recorded in the Beacon Chain and determine the head of the Beacon Chain.
 
 ![Validators proposing blocks and gettings rewards. A missed proposal for some epoch's 28th slot.](images/Beacon-Chain-Validators.png)
 
 A missed proposal for some epoch's 28th slot.
 
-At every epoch, a validator is pseudorandomly assigned to a slot and shard.  The validator is participating in the consensus of that assigned shard so that it can vote for that shard's head.  The validator links the shard head to the beacon block for a slot.
+At every epoch, a validator is pseudorandomly assigned to a slot.
 
 An **attestation** is a validator's vote, weighted by the validator's balance.  Attestations are broadcasted by validators in addition to blocks.
 
 Validators also police each other and are rewarded for reporting other validators that make conflicting votes, or propose multiple blocks.
 
-The contents of the Beacon Chain is primarily a registry of validator addresses, the state of each validator, attestations, and links to shards.  Validators are activated by the Beacon Chain and can transition to states, briefly described later in [Beacon Chain Validator Activation and Lifecycle](#validator-lifecycle).
+The contents of the Beacon Chain is primarily a registry of validator addresses, the state of each validator, and attestations.  Validators are activated by the Beacon Chain and can transition to states, briefly described later in [Beacon Chain Validator Activation and Lifecycle](#validator-lifecycle).
 
 ### Staking validators: semantics
 
@@ -60,10 +60,6 @@ Validators are _virtual_ and are activated by stakers.  In PoW, users buy hardw
 It is clearer to associate stakers with a stake, and validators with a **balance**.  Each validator has a maximum balance of 32 ETH, but stakers can stake all their ETH.  For every 32 ETH staked, one validator is activated.
 
 Validators are executed by _**validator clients**_ that make use of a beacon (chain) node.  A **beacon node** has the functionality of following and reading the Beacon Chain. A validator client can implement beacon node functionality or make calls into beacon nodes. One validator client can execute one or more validators.
-
-## **Crosslinks: Rooting Shards to the Beacon Chain**
-
-A crosslink is a reference in a beacon block to a shard block.  A crosslink is how the Beacon Chain follows the head of a shard chain. As there are 64 shards, each beacon block can contain up to 64 crosslinks.  A beacon block might only have one crosslink, if at that slot, there were no proposed blocks for 63 of the shards.  Crosslinks are planned for eth2 Phase 1 to root the shard chains into the Beacon Chain, serving as the base of the shard fork choice, shard chain finality, and for cross shard communication. All shard chains are following the Beacon Chain at all times.
 
 ## **Committees: Introduction**
 
