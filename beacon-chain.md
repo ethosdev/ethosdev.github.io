@@ -23,15 +23,11 @@ Let's dig into the bigger picture of staking validators, attestations, committee
 
 The Beacon Chain provides the heartbeat to Ethereum 2.0. It provides the tempo and rhythm for the system's harmony and consensus. Each slot is 12 seconds and an epoch is 32 slots: 6.4 minutes.
 
-![The Beacon Chain has slots of 12 seconds and 32 slots in an epoch which is 6.4 minutes. Genesis blocks are at Slot 0.](images/Beacon-Chain-Slots-and-Epochs.png){:.centered}
-
-The first 32 slots are in Epoch 0. Genesis blocks are at Slot 0.
-
-(Beacon Chain specification v0.12 is used in this explainer.)
+{% include fig.html url="images/Beacon-Chain-Slots-and-Epochs.png" alt="The Beacon Chain has slots of 12 seconds and 32 slots in an epoch which is 6.4 minutes. Genesis blocks are at Slot 0." caption="The first 32 slots are in Epoch 0. Genesis blocks are at Slot 0." %}
 
 A slot is a chance for a block to be added to the Beacon Chain. Every 12 seconds, one block is added when the system is running optimally. Validators do need to be roughly [synchronized with time.](https://ethresear.ch/t/network-adjusted-timestamps/4187)
 
-A slot is like the block time, but slots can be empty. The Beacon Chain genesis block is at Slot 0.
+A slot is like the block time, but slots can be empty. The Beacon Chain genesis block is at Slot 0. Beacon Chain specification v0.12 is used in this explainer.
 
 ## **Introduction to Validators, Attestations, and the Beacon Chain**
 
@@ -41,9 +37,7 @@ A block **proposer** is a validator that has been pseudorandomly selected to bui
 
 Most of the time, validators are **attesters** that vote on blocks.  These votes are recorded in the Beacon Chain and determine the head of the Beacon Chain.
 
-![Validators proposing blocks and gettings rewards. A missed proposal for some epoch's 28th slot.](images/Beacon-Chain-Validators.png){:.centered}
-
-A missed proposal for some epoch's 28th slot.
+{% include fig.html url="images/Beacon-Chain-Validators.png" alt="Validators proposing blocks and gettings rewards. A missed proposal for some epoch's 28th slot." caption="A missed proposal for some epoch's 28th slot." %}
 
 At every epoch, a validator is pseudorandomly assigned to a slot.
 

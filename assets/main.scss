@@ -12,8 +12,9 @@ hr {
   height: 2px;
 }
 
-img.centered {
+figure > img, .aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
