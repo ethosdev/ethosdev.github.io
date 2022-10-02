@@ -2,7 +2,7 @@
 layout: page
 title: "The Beacon Chain Ethereum 2.0 explainer you need to read first"
 permalink: /beacon-chain/
-description: Ethereum's Beacon Chain from staking validators to finality. Explained with examples, key details at the right level to make you proficient and save time.
+description: Ethereum's Beacon Chain and Proof of Stake from validators to finality. Illustrated with examples at the right level to make you proficient and save time.
 ---
 
 The engine was changed mid-flight! September 15 2022 — the day Ethereum switched to Proof of Stake.
