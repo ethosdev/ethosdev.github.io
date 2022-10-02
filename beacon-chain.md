@@ -61,9 +61,9 @@ It is clearer to associate stakers with a stake, and validators with a **balance
 
 Validators are executed by _**validator clients**_ that make use of a beacon (chain) node.  A **beacon node** has the functionality of following and reading the Beacon Chain. A validator client can implement beacon node functionality or make calls into beacon nodes. One validator client can execute one or more validators.
 
-## **Committees: Introduction**
+## **Committees**
 
-A committee is a group of validators.  For security, each slot (in the Beacon Chain and each shard) has committees of at least 128 validators.  An attacker has less than a [one in a trillion](https://medium.com/@chihchengliang/minimum-committee-size-explained-67047111fa20) probability of controlling ⅔ of a committee.
+A committee is a group of validators.  For security, each slot has committees of at least 128 validators.  An attacker has less than a [one in a trillion](https://medium.com/@chihchengliang/minimum-committee-size-explained-67047111fa20) probability of controlling ⅔ of a committee.
 
 The concept of a randomness beacon that emits random numbers for the public, lends its name to the Ethereum Beacon Chain. The Beacon Chain enforces consensus on a pseudorandom process called RANDAO.
 
@@ -73,25 +73,13 @@ At every epoch, a pseudorandom process RANDAO selects proposers for each slot, a
 
 Proposers are selected by RANDAO with a weighting on the validator's balance.  It's possible a validator is a proposer and committee member for the same slot, but it's not the norm. The probability of this happening is 1/32 so we’ll see it about once per epoch. The sketch depicts a scenario with less than 8,192 validators, otherwise there would be at least two committees per slot.
 
-This Beacon Chain explainer focuses on beacon committees: the validators that serve the Beacon Chain. A (beacon) committee is pseudorandomly assigned a shard to crosslink into a beacon block. There are no persistent committees. The committee responsible for crosslinking a shard block changes block-by-block.
-
-Shard committees that solely build shard chain blocks are a future topic. It's possible for many shard blocks to be built by shard chain validators that do not interact with the Beacon Chain. However, for a shard to communicate with other shards, it needs a beacon committee to crosslink it to a beacon block.
-
 ![3 slots and 3 examples of how committee validators attest to their view of the Beacon Chain head](images/Beacon-Chain-Committees.png)
 
 The diagram is a combined depiction of what happened in three slots. In Slot 1, a block is proposed and then attested to by two validators; one validator in Committee A was offline. The attestations and block at Slot 1 propagate the network and reach many validators. In Slot 2, a block is proposed and a validator in Committee B does not see it, thus it attests that the Beacon Chain head is the block at Slot 1.  Note this validator is different from the offline validator from Slot 1. **Attesting to the Beacon Chain head is called an LMD GHOST vote.** In Slot 3, all validators in Committee C run the LMD GHOST fork choice rule, and independently attest to the same head.
 
 A validator can only be in one committee per epoch. Typically, there are more than 8,192 validators: meaning more than one committee per slot. All committees are the same size, and have at least 128 validators. The security probabilities decrease when there are less than 4,096 validators because committees would have less than 128 validators.
 
-## **Committees: Crux**
-
-> **At every epoch, validators are evenly divided across slots and then subdivided into committees of appropriate size. All of the validators from that slot attest to the Beacon Chain head. Each of the committees in that slot attempts to crosslink a particular shard.  A shuffling algorithm scales up or down the number of committees per slot to get at least 128 validators per committee.**
-
-As an example, assume 16,384 validators.  512 validators are pseudorandomly assigned to Slot 1, another 512 to Slot 2, and so on.  The 512 validators for Slot 1 are then subdivided into four committees and pseudorandomly assigned to shards.  Assume that Shards 33, 55, 22, 11 are the shard assignments. All 512 validators cast a Slot 1 LMD GHOST vote.  128 validators in one of the four committees attempt to crosslink Shard 33. In another committee, 128 validators attempt to crosslink Shard 55.  128 validators in another committee attempt to crosslink Shard 22. Another 128 validators attempt to crosslink Shard 11.
-
-For Slot 2, the process repeats.  The 512 validators for Slot 2 are subdivided into four committees and pseudorandomly assigned to shards.  Assume that Shards 41, 20, 17, 15 are the shard assignments. All 512 validators for Slot 2 attest their views of the Beacon Chain head at Slot 2.  The committees attempt to crosslink Shards 41, 20, 17, 15.
-
-The process repeats for the remaining slots in the epoch.  Each validator has a slot when it can speak up, attest and crosslink.  At the end of the epoch, all 16,384 validators have had a chance to attest and crosslink.  But so far the validator votes have been slot-specific rather than epoch-specific. It's like voting for your local government, rather than voting in a broader national election.  All 16,384 validators have not voted on the same thing. The upcoming sections on checkpoints and finality, describe the epoch-specific vote that validators cast when it's their slot to speak up.  At their assigned slot, all 16,384 validators also vote for the epoch's checkpoint.
+> **At every epoch, validators are evenly divided across slots and then subdivided into committees of appropriate size. All of the validators from that slot attest to the Beacon Chain head. A shuffling algorithm scales up or down the number of committees per slot to get at least 128 validators per committee.**
 
 ## **Beacon Chain Checkpoints**
 
@@ -129,8 +117,6 @@ To simplify the following narratives, assume that validators all have the same b
 
 The epoch boundary block at Slot 96 is proposed and contains attestations for the Epoch 2 checkpoint.  The number of attestations for the Epoch 2 checkpoint now reaches the ⅔ supermajority.  This causes the justification of the Epoch 2 checkpoint, and thus the finality of the previously justified Epoch 1 checkpoint.  The finality of Slot 32 immediately causes the finality of all blocks preceding it.  When finalizing a checkpoint, there is no limit to the number of blocks that can be finalized. Although finality is only computed at epoch boundaries, attestations are accumulated at each block, as described in alternate narratives "What could have happened from genesis to the head" below.
 
-All the crosslinks contained in the beacon blocks from Slot 1 to Slot 32, would lead to the finality of the shard chains.  In other words, a shard block is finalized when it is crosslinked into a beacon block that is finalized. A crosslink by itself is insufficient to finalize a shard block, but contributes to the shard chain’s fork choice.
-
 ### What could have happened from genesis to the head
 
 With the same illustration, here is a storyline that could have been observed from genesis.  All the proposers from Slot 1 until Slot 63 propose a block, and these appear on-chain. With each block in Epoch 1, its checkpoint (block at Slot 32) accumulates attestations from 55% of validators. The block at Slot 64 is proposed and it includes attestations for the Epoch 1 checkpoint.  Now, 70% of validators have attested to the Epoch 1 checkpoint: this causes its justification. The Epoch 2 checkpoint (Slot 64) accumulates attestations throughout Epoch 2 but does not reach the ⅔ supermajority. The block at Slot 96 is proposed and it includes attestations for the Epoch 2 checkpoint. This leads to reaching the ⅔ supermajority and the justification of the Epoch 2 checkpoint.  Justifying the Epoch 2 checkpoint finalizes the Epoch 1 checkpoint and all prior blocks.
@@ -158,7 +144,7 @@ Without getting too deep, we'll discuss six topics regarding validator incentive
 5. proposer rewards
 6. inactivity leak penalty
 
-1\. Validators get rewards for making attestations (LMD GHOST and FFG votes) that the majority of other validators agree with. In eth2 Phase 1, validators will also receive rewards for crosslinks. Attestations in finalized blocks are worth more.
+1\. Validators get rewards for making attestations (LMD GHOST and FFG votes) that the majority of other validators agree with. Attestations in finalized blocks are worth more.
 
 2\. On the flip side, validators get penalties for not attesting or if they attest to blocks that are not finalized.
 
@@ -231,11 +217,10 @@ At every epoch, validators are evenly divided across slots and then subdivided i
 
 - all validators in an epoch attempt to finalize the same checkpoint: FFG vote
 - all validators assigned to a slot attempt to vote on the same Beacon Chain head: LMD GHOST vote
-- all validators assigned to a committee attempt to crosslink a particular shard
 
 Optimal behavior rewards validators the most.
 
-Activation of the Beacon Chain requires at least 16,384 validators at genesis.  The number of validators can decrease with slashings or voluntary exits, or stakers can activate more. Many more validators are expected as the system ramps up to eth2 Phase 1 and beyond. The Beacon Chain needs at least 262,144 validators (over eight million ETH staked) to have blocks that include 64 crosslinks.
+Activation of the Beacon Chain requires at least 16,384 validators at genesis.  The number of validators can decrease with slashings or voluntary exits, or stakers can activate more. Many more validators are expected as the system ramps up to eth2 Phase 1 and beyond.
 
 The world's never had a scalable platform for _decentralized_ systems and applications before.  If you're inspired to dive deeper, authoritative references are in [Ethereum 2.0 Specifications](https://github.com/ethereum/eth2.0-specs).  It includes the Beacon Chain spec, links to other key resources, and issues with bounties. Currently, the _most pressing need_ is [**Peer-to-Peer Networking**](https://github.com/ethereum/eth2.0-specs/blob/dev/specs/phase0/p2p-interface.md). Contribute or refer others to [challenges](https://notes.ethereum.org/@protolambda/ryNEqN0mL), ethresear.ch or the Ethereum Magician's forum, and be a part of making history!
 
