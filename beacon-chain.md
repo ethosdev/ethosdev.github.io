@@ -125,8 +125,6 @@ Here is another possible scenario.  Consider only until Epoch 1. The checkpoint
 
 The justification of a block can sometimes finalize a block two or more epochs ago.  The Gasper paper discusses these cases. They are expected only in exceptional times of high latency, network partitions, or strong attacks.
 
-Finality is essential for shards and parties to Ethereum’s blockchain to have guarantees about transactions. Finality reduces complexity with cross shard communications. Without finality, cascading rollbacks of transactions within and across shards would be disruptive and could nullify sharding's benefits.
-
 ## **Attestations: a closer look**
 
 An attestation contains both an LMD GHOST vote and an FFG vote.  Optimally, all validators submit one attestation per epoch.  An attestation has 32 slot chances for inclusion on-chain. This means a validator may have two attestations included on-chain in a single epoch. Validators are rewarded the most when their attestation is included on-chain at their assigned slot; later inclusion is a decaying reward.  To give validators time to prepare, they are assigned to committees one epoch in advance. Proposers are only assigned to slots once the epoch starts. Nonetheless, [secret leader election](https://ethresear.ch/t/low-overhead-secret-single-leader-election/5994) research aims to mitigate attacks or bribing of proposers.
