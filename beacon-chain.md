@@ -7,31 +7,25 @@ description: Ethereum's Beacon Chain from staking validators to finality. Explai
 
 Remember the joy you felt when you started getting _aha moments_ about blockchains?
 
-Are you eager for a similar understanding of the Beacon Chain?
+Are you eager to similarly understand Proof of Stake with the Beacon Chain?
 
-Ethereum's Beacon Chain is the heart of a system where most content is too technical, niche, or not deep enough.
-
-Here, you'll gain a gratifying understanding of the Beacon Chain's elements and mechanics.
-
-Examples will explain key details at the right level to make you proficient and save time.
+Here, Ethereum's Beacon Chain will be explained with key details at the right level to make you proficient and save time.
 
 We assume you have a solid foundation of Ethereum or Bitcoin, and some familiarity with Proof of Stake.
 
-Let's dig into the bigger picture of staking validators, attestations, committees, checkpoints, and finality.
-
 ## **Slots and Epochs**
 
-The Beacon Chain provides the heartbeat to Ethereum 2.0. It provides the tempo and rhythm for the system's harmony and consensus. Each slot is 12 seconds and an epoch is 32 slots: 6.4 minutes.
+The Beacon Chain provides the heartbeat to Ethereum's consensus. Each slot is 12 seconds and an epoch is 32 slots: 6.4 minutes.
 
 {% include fig.html url="images/Beacon-Chain-Slots-and-Epochs.png" alt="The Beacon Chain has slots of 12 seconds and 32 slots in an epoch which is 6.4 minutes. Genesis blocks are at Slot 0." caption="The first 32 slots are in Epoch 0. Genesis blocks are at Slot 0." %}
 
 A slot is a chance for a block to be added to the Beacon Chain. Every 12 seconds, one block is added when the system is running optimally. Validators do need to be roughly [synchronized with time.](https://ethresear.ch/t/network-adjusted-timestamps/4187)
 
-A slot is like the block time, but slots can be empty. The Beacon Chain genesis block is at Slot 0. Beacon Chain specification v0.12 is used in this explainer.
+A slot is like the block time, but slots can be empty. The Beacon Chain genesis block is at Slot 0. (Beacon Chain specification v0.12 is used in this explainer.)
 
 ## **Introduction to Validators, Attestations, and the Beacon Chain**
 
-While Proof of Work (PoW) is associated with miners, in Ethereum 2.0 validators are Proof of Stake "virtual miners".  Validators are actively participating in the consensus of the Ethereum 2.0 protocol. Their incentives are discussed later in [Staking Rewards and Penalties](#rewards-penalties).
+While Proof of Work (PoW) is associated with miners, Ethereum's validators are Proof of Stake "virtual miners". Validators run Ethereum's consensus. Their incentives are discussed later in [Staking Rewards and Penalties](#rewards-penalties).
 
 A block **proposer** is a validator that has been pseudorandomly selected to build a block.
 
