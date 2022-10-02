@@ -21,7 +21,7 @@ The Beacon Chain provides the heartbeat to Ethereum's consensus. Each slot is 12
 
 A slot is a chance for a block to be added to the Beacon Chain. Every 12 seconds, one block is added when the system is running optimally. Validators do need to be roughly [synchronized with time.](https://ethresear.ch/t/network-adjusted-timestamps/4187)
 
-A slot is like the block time, but slots can be empty. The Beacon Chain genesis block is at Slot 0. (Beacon Chain specification v0.12 is used in this explainer.)
+A slot is like the block time, but slots can be empty. The Beacon Chain genesis block is at Slot 0.
 
 ## **Introduction to Validators, Attestations, and the Beacon Chain**
 
@@ -43,11 +43,11 @@ The contents of the Beacon Chain is primarily a registry of validator addresses,
 
 ### Staking validators: semantics
 
-Validators are _virtual_ and are activated by stakers.  In PoW, users buy hardware to become miners. In Ethereum 2.0, users stake ETH to activate and control validators.
+Validators are _virtual_ and are activated by stakers.  In PoW, users buy hardware to become miners. In Ethereum, users stake ETH to activate and control validators.
 
 It is clearer to associate stakers with a stake, and validators with a **balance**.  Each validator has a maximum balance of 32 ETH, but stakers can stake all their ETH.  For every 32 ETH staked, one validator is activated.
 
-Validators are executed by _**validator clients**_ that make use of a beacon (chain) node.  A **beacon node** has the functionality of following and reading the Beacon Chain. A validator client can implement beacon node functionality or make calls into beacon nodes. One validator client can execute one or more validators.
+Validators are executed by _**validator clients**_ that make use of a beacon (chain) node.  A **beacon node** has the functionality of following and reading the Beacon Chain. A validator client can implement beacon node functionality or make calls into beacon nodes. One validator client can execute many validators.
 
 ## **Committees**
 
@@ -132,9 +132,9 @@ Without getting too deep, we'll discuss six topics regarding validator incentive
 
 4\. Slashings are penalties ranging from over 0.5 ETH up to a validator's entire stake. **An honest, secure validator cannot be slashed by the actions of other validators**. For committing a [slashable offence](#slashable-offences) a validator loses at least 1/32 of their balance and is deactivated ("forced exit").  The validator is penalized as if it was offline for 8,192 epochs. The protocol also imposes an additional penalty based on how many others have been slashed near the same time.  The basic formula for the additional penalty is: _validator\_balance\*3\*fraction\_of\_validators\_slashed_. An effect is that if ⅓ of all validators commit a slashable offence in a similar period of time, they lose their entire balance.  The validator that reports a slashable offence gets a whistleblower's reward.
 
-5\. Proposers of blocks that get finalized, obtain a sizable reward.  Validators that are consistently online doing a good job accrue ~1/8 boost to their total rewards for proposing blocks with new attestations. When a slashing happens, proposers also get a small reward for including the slashing evidence in a block. In eth2 Phase 0, all of the whistleblower's reward actually goes to the proposer.
+5\. Proposers of blocks that get finalized, obtain a sizable reward.  Validators that are consistently online doing a good job accrue ~1/8 boost to their total rewards for proposing blocks with new attestations. When a slashing happens, proposers also get a small reward for including the slashing evidence in a block. Currently, all of the whistleblower's reward actually goes to the proposer.
 
-6\. Ethereum 2.0 is a system with many mechanisms, some that can be appreciated more by their overall effects.  The designed rewards and penalties culminate in an **inactivity leak penalty**. This is _severe and rare_ unlike typical risks in #3. Basically, if there have been more than four epochs since finality, validators suffer an inactivity penalty that increases quadratically until a checkpoint is finalized.  The inactivity penalty (or "quadratic leak") guarantees this type of outcome: if 50% of validators drop offline, blocks will start finalizing again after 18 days. The quadratic leak drains problematic validators to a forced exit so that other validators will become a **⅔** majority that can resume finality. **The inactivity leak does not drain validators that are operating optimally.**  During an inactivity leak, attester rewards are zero; validators earn proposer and whistleblower rewards as usual.
+6\. Ethereum is a system with many mechanisms, some that can be appreciated more by their overall effects.  The designed rewards and penalties culminate in an **inactivity leak penalty**. This is _severe and rare_ unlike typical risks in #3. Basically, if there have been more than four epochs since finality, validators suffer an inactivity penalty that increases quadratically until a checkpoint is finalized.  The inactivity penalty (or "quadratic leak") guarantees this type of outcome: if 50% of validators drop offline, blocks will start finalizing again after 18 days. The quadratic leak drains problematic validators to a forced exit so that other validators will become a **⅔** majority that can resume finality. **The inactivity leak does not drain validators that are operating optimally.**  During an inactivity leak, attester rewards are zero; validators earn proposer and whistleblower rewards as usual.
 
 ## **Slashable Offences**
 
@@ -173,7 +173,7 @@ A validator client may use multiple beacon nodes for factors like better uptime,
 
 Each validator needs a balance of 32 ETH to get activated.  A user staking 32 ETH into a deposit contract on Ethereum mainnet, will activate one validator.
 
-The Beacon Chain deactivates ("forced exit") all validators whose balance reaches 16 ETH; stakers will be able to withdraw any remaining validator balance but not in eth2 Phase 0.
+The Beacon Chain deactivates ("forced exit") all validators whose balance reaches 16 ETH; stakers will be able to withdraw any remaining validator balance likely in 2023.
 
 Validators can also "voluntary exit" after serving for 2,048 epochs, around 9 days.
 
@@ -196,9 +196,9 @@ At every epoch, validators are evenly divided across slots and then subdivided i
 
 Optimal behavior rewards validators the most.
 
-Activation of the Beacon Chain requires at least 16,384 validators at genesis.  The number of validators can decrease with slashings or voluntary exits, or stakers can activate more. Many more validators are expected as the system ramps up to eth2 Phase 1 and beyond.
+The Beacon Chain genesis was on December 1 2020 with 21,063 validators. The number of validators can decrease with slashings or voluntary exits, or stakers can activate more. Approaching 2 years, there are over 400,000 validators.
 
-The world's never had a scalable platform for _decentralized_ systems and applications before.  If you're inspired to dive deeper, authoritative references are in [Ethereum 2.0 Specifications](https://github.com/ethereum/eth2.0-specs).  It includes the Beacon Chain spec, links to other key resources, and issues with bounties. Currently, the _most pressing need_ is [**Peer-to-Peer Networking**](https://github.com/ethereum/eth2.0-specs/blob/dev/specs/phase0/p2p-interface.md). Contribute or refer others to [challenges](https://notes.ethereum.org/@protolambda/ryNEqN0mL), ethresear.ch or the Ethereum Magician's forum, and be a part of making history!
+The world's never had a scalable platform for _decentralized_ systems and applications before.  If you're inspired to dive deeper, authoritative references are in [Ethereum Proof-of-Stake Consensus Specifications](https://github.com/ethereum/consensus-specs).  It includes the Beacon Chain spec, links to other key resources, and issues with bounties. Contribute or refer others to [challenges](https://notes.ethereum.org/@protolambda/ryNEqN0mL), ethresear.ch or the Ethereum Magician's forum, and be a part of making history!
 
 [Follow @josephch](https://twitter.com/josephch)
 <script defer="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
