@@ -17,56 +17,7 @@ Examples will explain key details at the right level to make you proficient and 
 
 We assume you have a solid foundation of Ethereum or Bitcoin, and some familiarity with Proof of Stake.
 
-Let's dig into the bigger picture of shards, staking validators, attestations, committees, checkpoints, and finality.
-
-## **Sharding: a big picture**
-
-To appreciate the Beacon Chain, an introduction to sharding helps.  The main problem in scalability that blockchains, including Ethereum, currently face is: every node has to verify and execute every transaction.
-
-In computer science, there are two main approaches to scaling:
-
-1. Scaling vertically: basically, make nodes more and more powerful.
-2. Scaling horizontally: basically, add more nodes.
-
-For decentralization, blockchains need to scale horizontally.  A goal of Ethereum 2.0, also called eth2 or Serenity, is for nodes to run on consumer hardware. Sharding is the term for horizontally partitioning a database.
-
-Generally, a shard chain has a subset of nodes processing it. Virtual miners, validators, are assigned to shards, and only process and validate transactions in that shard (chain).
-
-**Ethereum's shards have a dynamic subset of nodes processing it block-by-block.**
-
-The main challenge with sharding a blockchain is the security of shards.  Since validators are spread out across shards, malicious validators could takeover a single shard.
-
-A key part to a solution:
-
-> **random shuffling of validators, where every shard block has a (pseudo) randomly chosen committee of validators, ensures that it is mathematically improbable that an attacker controlling less than ⅓ of** _all_ **validators can attack a single shard**
-
-Fraud proofs, custody proofs, and data availability checks are also important security components but require their own explainers.
-
-The current eth2 plan is for **64 shards**. Although shards are separate from the Beacon Chain, we'll describe some key elements of the overall system.
-
-Sharding has revealed clues about what the Ethereum Beacon Chain does and needs.  We'll acquire a sense of why there are additional components to classical blockchains. The nascent field of sharded blockchains always welcomes innovations from inspired readers.
-
-## **Ethereum 2.0 Phases**
-
-Briefly, Ethereum 2.0 has three phases:
-
-- Phase 0 - Beacon Chain
-- Phase 1 - shards
-- Phase 2 - execution
-
-An analogy with the human body:
-
-- Phase 0 - heart
-- Phase 1 - limbs
-- Phase 2 - brain
-
-An analogy with an orchestra that's tough to beat:
-
-- Phase 0 - conductor
-- Phase 1 - instruments
-- Phase 2 - musicians
-
-All phases are integral to the system and have different characteristics. [Phase 0 is part of Ethereum 2020.](https://ethos.dev/ethereum-2020-roadmap/) Phase 1 is generally more inanimate and static than the other phases. Phase 2 is generally about action and agency.
+Let's dig into the bigger picture of staking validators, attestations, committees, checkpoints, and finality.
 
 ## **Slots and Epochs**
 
@@ -78,9 +29,9 @@ The first 32 slots are in Epoch 0. Genesis blocks are at Slot 0.
 
 (Beacon Chain specification v0.12 is used in this explainer.)
 
-A slot is a chance for a block to be added to the Beacon Chain and shards. You can imagine that the Beacon Chain and shard chains are choreographed in lockstep. Every 12 seconds, one beacon (chain) block and 64 shard blocks are added when the system is running optimally. Validators do need to be roughly [synchronized with time.](https://ethresear.ch/t/network-adjusted-timestamps/4187)
+A slot is a chance for a block to be added to the Beacon Chain. Every 12 seconds, one block is added when the system is running optimally. Validators do need to be roughly [synchronized with time.](https://ethresear.ch/t/network-adjusted-timestamps/4187)
 
-A slot is like the block time, but slots can be empty. Genesis blocks for the Beacon Chain and shards are at Slot 0. Shards will start at a future epoch than the Beacon Chain's Epoch 0, but will have their own Epoch 0 that includes their genesis blocks.
+A slot is like the block time, but slots can be empty. The Beacon Chain genesis block is at Slot 0.
 
 ## **Introduction to Validators, Attestations, and the Beacon Chain**
 
