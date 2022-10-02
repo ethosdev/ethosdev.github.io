@@ -31,7 +31,7 @@ A block **proposer** is a validator that has been pseudorandomly selected to bui
 
 Most of the time, validators are **attesters** that vote on blocks.  These votes are recorded in the Beacon Chain and determine the head of the Beacon Chain.
 
-{% include fig.html url="images/Beacon-Chain-Validators.png" alt="Validators proposing blocks and gettings rewards. A missed proposal for some epoch's 28th slot." caption="A missed proposal for some epoch's 28th slot." %}
+{% include fig.html url="images/Beacon-Chain-Validators.png" alt="Validators proposing blocks and getting rewards. A missed proposal for some epoch's 28th slot." caption="A missed proposal for some epoch's 28th slot." %}
 
 At every epoch, a validator is pseudorandomly assigned to a slot.
 
