@@ -5,13 +5,13 @@ permalink: /beacon-chain/
 description: Ethereum's Beacon Chain from staking validators to finality. Explained with examples, key details at the right level to make you proficient and save time.
 ---
 
-Remember the joy you felt when you started getting _aha moments_ about blockchains?
+The engine was changed mid-flight! September 15 2022 — the day Ethereum switched to Proof of Stake.
 
-Are you eager to similarly understand Proof of Stake with the Beacon Chain?
+That new engine is the Beacon Chain.
 
-Here, Ethereum's Beacon Chain will be explained with key details at the right level to make you proficient and save time.
+Do you feel it's time to know a bit how it works?
 
-We assume you have a solid foundation of Ethereum or Bitcoin, and some familiarity with Proof of Stake.
+Ethereum's Beacon Chain will be illustrated with examples at the right level to make you proficient and save time.
 
 ## **Slots and Epochs**
 
