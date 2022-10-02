@@ -200,8 +200,7 @@ The Beacon Chain genesis was on December 1 2020 with 21,063 validators. The num
 
 The world's never had a scalable platform for _decentralized_ systems and applications before.  If you're inspired to dive deeper, authoritative references are in [Ethereum Proof-of-Stake Consensus Specifications](https://github.com/ethereum/consensus-specs).  It includes the Beacon Chain spec, links to other key resources, and issues with bounties. Contribute or refer others to [challenges](https://notes.ethereum.org/@protolambda/ryNEqN0mL), ethresear.ch or the Ethereum Magician's forum, and be a part of making history!
 
-[Follow @josephch](https://twitter.com/josephch)
-<script defer="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p style="text-align: right"><a href="https://twitter.com/josephch">Follow @josephch</a></p>
 
 * * *
 
@@ -209,6 +208,8 @@ _Thank you to Danny Ryan for review and feedback on several sections, Momo Araki
 
 * * *
 
-_Updates 2020-04-27: Fix explanation of double vote. Thank you Aditya Asgaonkar for reporting, review, and check out his posts like_ [_Casper FFG Explainer_](https://www.adiasg.me/2020/03/31/casper-ffg-explainer.html)_._
+_Updates 2022-10-01: Removed sharding, crosslinks, and old terms like eth2. Improve opening and conclusion. See [archive.org](https://web.archive.org/web/20220000000000*/ethos.dev/beacon-chain) for prior versions._
 
 _2020-05-23: Staking Rewards and Penalties are clarified further and per_ v0.12 _of the Beacon Chain spec, optimal validators are not drained by the inactivity leak._
+
+_2020-04-27: Fix explanation of double vote. Thank you Aditya Asgaonkar for reporting, review, and check out his posts like_ [_Casper FFG Explainer_](https://www.adiasg.me/2020/03/31/casper-ffg-explainer.html)_._
