@@ -1,5 +1,5 @@
 ---
-title: "Free staking on Ethereum 2.0 and Secret Shared Validators"
+title: "Free staking on Ethereum and Distributed Validator Technology"
 date: "2020-05-04"
 permalink: /:title/
 ---
@@ -8,7 +8,7 @@ Did you know that one of the largest exchanges already provides free staking?
 
 Here's three secrets you should know about Ethereum staking and what to do about them.
 
-You'll want to know about free staking, but more important is doing it with Secret Shared Validators to help maintain network security.
+You'll want to know about free staking, but more important is doing it with Distributed Validator Technology (DVT) to help maintain network security.
 
 But first, by reporting some facts it can be perceived that there's businesses the author biases.  In truth, there's little bias and don't shoot the messenger :)  The author's bias is for the ecosystem which thrives with all the entities in it, and thrives even better when you, the customer, does well.
 
@@ -22,21 +22,21 @@ As [reported last month](https://www.theblockcrypto.com/linked/60916/coinbase-cu
 
 You may have thought that free staking is too cheap.  Don't, because it's already possible and sustainable by some.  Binance's business model includes free staking, a bit like how Internet business models give you a free email account. 
 
-Free staking is good for you.  You should demand free staking from the providers charging a fee.  Now, is there a catch to free staking?  Only if secret #1 doesn't happen.  #1 is Secret Shared Validators and it also needs your voice.  Let's discuss the risk to free staking if Secret Shared Validators don't happen.
+Free staking is good for you.  You should demand free staking from the providers charging a fee.  Now, is there a catch to free staking?  Only if secret #1 doesn't happen.  #1 is Distributed Validator Technology (DVT) and it also needs your voice.  But next, let's discuss the risk to free staking without DVT.
 
 ## **Secret #2: Staking companies with the most validators can attack the network**
 
 [Coinbase explains](http://web.archive.org/web/20200328023024/https://help.coinbase.com/en/coinbase/trading-and-funding/other/staking-on-coinbase.html): "You retain full ownership of your crypto, but you’re delegating your staking power to Coinbase." It hints at the power that staking services amass, but does not educate the risks of that power.
 
-Ownership and custody is relatively simple in Ethereum 2.0 staking, because there are two staking keys.  One is a validator "hot" key, and one is a withdrawal "cold" key.  Basically, whoever has the withdrawal key, owns the funds.  You can give the validator key to a staking company, and keep the withdrawal key to yourself: a company cannot steal your stake (though they can lose the stake).
+Ownership and custody is relatively simple in Ethereum staking, because there are two staking keys.  One is a validator "hot" key, and one is a withdrawal "cold" key.  Basically, whoever has the withdrawal key, owns the funds.  You can give the validator key to a staking company, and keep the withdrawal key to yourself: a company cannot steal your stake (though they can lose the stake).
 
-By giving your validator key to a company, you give them full power to control your validator.  This is the delegated staking power quoted above.  When many people give their validator keys to a company, that company can control enough validators to be a threat to the Ethereum 2.0 network.  The company could knowingly or unknowingly command validators to attack the network.
+By giving your validator key to a company, you give them full power to control your validator.  This is the delegated staking power quoted above.  When many people give their validator keys to a company, that company can control enough validators to be a threat to the Ethereum network.  The company could knowingly or unknowingly command validators to attack the network.
 
 Free staking increases risk of an attack on the network, especially if there's only one free staking service and it captures most of the stakers.  Existing Proof of Stake blockchains have no protocol defence against this.
 
-You need to know this dark side of free staking services, but also the good news that the Ethereum 2.0 protocol has been designed with fundamentals to eliminate risk from a single entity.
+You need to know this dark side of free staking services, but also the good news that the Ethereum protocol has been designed with fundamentals to eliminate risk from a single entity.
 
-The #1 secret is little known in the market, but should also be among the priorities in the [Ethereum 2020 roadmap](https://ethos.dev/ethereum-2020-roadmap/) to keep the Ethereum 2.0 network more secure.
+The #1 secret is that Distributed Validator Technology (DVT) allows you to stake with a company like Binance, without giving them full control of your validators.
 
 ## **Secret #1: You should demand Secret Shared Validators**
 
