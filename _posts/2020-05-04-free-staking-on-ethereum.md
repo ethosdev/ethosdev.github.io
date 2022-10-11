@@ -52,34 +52,25 @@ Some may tell you that you should run your own validators.  That's fine if you'
 
 Even if you run your own validators, you can still benefit from DVT.  They allow you to spread validators across several machines and even different data centers.  This increases security and avoids single points of failure.
 
-There's a chance that Binance will not allow Distributed Validators.  Ideally, **you should demand that a company supports Distributed Validators before signing up for their free staking**.
-
-## **Priority of Secret Shared Validators**
-
-Prioritizing Secret Shared Validators depends on one's views about the likelihood of free staking and the threat of a single company obtaining many validators.  There's no alarm for Secret Shared Validators yet.  Currently, Ethereum 2.0 client teams are correctly focused on hardening and productionizing their clients.  More will soon be written about Secret Shared Validators, to kickstart the specification and implementation of _**Secret Shared Validator clients**_, as well as a standard for Secret Shared Validators that staking companies should adopt.
-
-There is related work around Proof of Custody for eth2 Phase 1, and trustless staking pools. Such work (and maintaining focus on it) is important.  However, we should not be confused that it covers what's needed for Secret Shared Validators.  Such work is not explicitly leading to _Secret Shared Validator clients_ that can be used in production.  Nor does the work lead to a standard for Secret Shared Validators so that staking operations of different companies can be combined.
+There's a chance that Binance will not allow DVT.  Ideally, **you should demand that a company supports Distributed Validators before signing up for their free staking**.
 
 ## **A dream or will it play out?**
 
-Is it a good dream to have Binance and a couple of others provide free staking with Secret Shared Validators?  Will Coinbase join?  We'll need to drive towards ensuring:
+Is it a good dream to have Binance and a couple of others provide free staking with DVT?  Will Coinbase join?  We'll need to drive towards ensuring:
 
-1. a **specification for a Secret Shared Validator client**
-2. there's **easy-to-use tools** (and UIs) that allow you to split your validator private key into multiple shares
-3. at least **one implementation of a Secret Shared Validator client**
-4. a **standard for how to operate Secret Shared Validators** (so that staking operations of different companies can be combined)
-5. for retail customers, **multiple companies offer free staking with Secret Shared Validators**
-6. you sign up with two or more such companies and **enjoy free staking more securely**
-
-The first four items are needed so that Secret Shared Validators can be tested on testnets and released on Mainnet.  For the fifth item, you can prod exchanges and [prod Binance to **use Secret Shared Validators** and enter the Ethereum staking market sooner](https://twitter.com/cz_binance).
+1. **easy-to-use tools** (and UIs) that allow you to split your validator private key into multiple shares
+2. at least one **implementation** of a Distributed Validator client
+3. **adoption** of Distributed Validator protocol (so that staking operations of different companies can be combined)
+4. for retail customers, **multiple companies offer free staking with Distributed Validators**
+5. you sign up with two or more such companies and **enjoy free staking more securely**
 
 ## **Secrets for you to spread**
 
-You should know that free staking is viable (even maybe inevitable).  But, there's a risk to the Ethereum 2.0 network if there's only one free staking company that everyone joins.  Secret Shared Validators would prevent a company from unilateral control of their customers' validators.  We need a spec and implementation of a Secret Shared Validator client and contact @dankrad on Twitter or email dankrad@ethereum.org if you'd like to work on this.
+You should know that free staking is viable (even maybe inevitable).  But, there's a risk to the Ethereum network if there's only one free staking company that everyone joins.  Distributed Validator Technology would prevent a company from unilateral control of their customers' validators.  Contact @dankrad on Twitter or email dankrad@ethereum.org if you'd like to work on this.
 
-Most important, you should demand a standard for operating Secret Shared Validators that staking companies should comply with.  Let's hope that you can enjoy free staking on Ethereum with Secret Shared Validators to maintain network security.  Let's all make it happen!
+Most important, you should demand staking companies prepare and adopt DVT.  Let's hope that you can enjoy free staking on Ethereum with Distributed Validator Technology to maintain network security.  Let's all make it happen!
 
 * * *
 
-_Thank you to Dankrad Feist for reviewing a draft and feedback, including Secret Shared Validator terminology (I capitalized for readability).  As always, reviewers don't imply agreement with my opinions._
+_Thank you to Dankrad Feist for reviewing a draft and feedback.  As always, reviewers don't imply agreement with my opinions._
 
