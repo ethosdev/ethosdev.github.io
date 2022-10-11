@@ -68,9 +68,13 @@ Is it a good dream to have Binance and a couple of others provide free staking w
 
 You should know that free staking is viable (even maybe inevitable).  But, there's a risk to the Ethereum network if there's only one free staking company that everyone joins.  Distributed Validator Technology would prevent a company from unilateral control of their customers' validators.  Contact @dankrad on Twitter or email dankrad@ethereum.org if you'd like to work on this.
 
-Most important, you should demand staking companies prepare and adopt DVT.  Let's hope that you can enjoy free staking on Ethereum with Distributed Validator Technology to maintain network security.  Let's all make it happen!
+Most important, you should demand staking companies prepare and adopt the [Ethereum Distributed Validator Specifications](https://github.com/ethereum/distributed-validator-specs).  Let's hope that you can enjoy free staking on Ethereum with DVT to maintain network security.  Let's all make it happen!
 
 * * *
 
 _Thank you to Dankrad Feist for reviewing a draft and feedback.  As always, reviewers don't imply agreement with my opinions._
+
+* * *
+
+_Update 2022-10-11: Removed sharding, crosslinks, and old terms like eth2. Improve opening and conclusion. See [archive.org](https://web.archive.org/web/20220000000000*/https://ethos.dev/free-staking) for prior versions._
 
