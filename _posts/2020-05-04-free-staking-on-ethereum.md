@@ -48,11 +48,11 @@ For example, if Prysmatic Labs and Sigma Prime (or others) have free staking for
 
 Some may tell you that you should run your own validators.  That's fine if you're comfortable and enjoy the work.  But it's not the mainstream solution yet.
 
-> **Secret Shared Validators are critical.** **There should be easy tools for you to split your validator private key into shares that you can provide to staking companies.  There needs to be a standard for how to operate Secret Shared Validators so that staking operations of different companies can be combined.**
+> **Distributed Validator Technology is critical.** **There should be easy tools for you to split your validator private key into shares that you can provide to staking companies.  There needs to be a standard for how to operate Distributed Validators so that staking operations of different companies can be combined.**
 
-Even if you run your own validators, you can still benefit from Secret Shared Validators.  They allow you to spread validators across several machines and even different data centers.  This increases security and avoids single points of failure.
+Even if you run your own validators, you can still benefit from DVT.  They allow you to spread validators across several machines and even different data centers.  This increases security and avoids single points of failure.
 
-There's a chance that Binance provides free staking but doesn't allow Secret Shared Validators.  Let's be clear, **you should demand that a company supports Secret Shared Validators before signing up for their free staking**.  If Binance offers 0% fees, you want Secret Shared Validators.  If Binance offers 0.5% fees, you still want Secret Shared Validators: paying fees is not a substitute.
+There's a chance that Binance will not allow Distributed Validators.  Ideally, **you should demand that a company supports Distributed Validators before signing up for their free staking**.
 
 ## **Priority of Secret Shared Validators**
 
