@@ -6,7 +6,7 @@ permalink: /:title/
 
 Did you know that one of the largest exchanges already provides free staking?
 
-Here's three secrets you should know about Ethereum 2.0 staking and what to do about them.
+Here's three secrets you should know about Ethereum staking and what to do about them.
 
 You'll want to know about free staking, but more important is doing it with Secret Shared Validators to help maintain network security.
 
@@ -14,23 +14,13 @@ But first, by reporting some facts it can be perceived that there's businesses t
 
 ## **Secret #3: You should demand free staking**
 
-The market for Ethereum 2.0 staking services is building up.  You need to know the possibilities.  You can prod the market.  If you plan on staking, you should express what you'd like.  Collectively, at this early stage, stakers can meaningfully lead and shape the market.
+You need to know that free staking is possible.
 
 As [reported last month](https://www.theblockcrypto.com/linked/60916/coinbase-custody-is-the-biggest-tezos-staking-service-despite-charging-higher-fees):
 
 > "Coinbase charges the highest fee –25% – for XTZ staking, while Kraken charges 7.25% and Binance currently charges no fee."
 
 You may have thought that free staking is too cheap.  Don't, because it's already possible and sustainable by some.  Binance's business model includes free staking, a bit like how Internet business models give you a free email account. 
-
-What's unclear is when Binance will offer staking on the [Ethereum 2.0 Beacon Chain](https://ethos.dev/beacon-chain/).  If you're a Binance customer, it's worth prodding them for Ethereum staking with Secret Shared Validators.  Otherwise it could be months where you may have to suffer 25% staking fees.
-
-Free staking is good for you but will have its critics.  This post will not debate much because the two remaining secrets are even more important.
-
-Some may think free staking to be unlikely, but if Binance offers free Ethereum staking, one more exchange (especially Coinbase) could make free staking inevitable.  Two companies can tip the market towards free staking.
-
-Free staking makes it harder for startups that want to compete in the retail market.  But startups that can tackle markets such as institutional staking, or innovating in other areas, are likely to be healthier for the ecosystem. I'd like to repeat that fees for institutional staking would be highly desirable, so that revenues from it can help fund free staking for the retail market sustainably.
-
-For retail stakers, low fees are very important like the triumph of stock market index funds over actively managed funds.  Further, as the number of validators increases, the Annual Percentage Return for staking decreases.  Staking returns don't more penalty of staking fees.
 
 Free staking is good for you.  You should demand free staking from the providers charging a fee.  Now, is there a catch to free staking?  Only if secret #1 doesn't happen.  #1 is Secret Shared Validators and it also needs your voice.  Let's discuss the risk to free staking if Secret Shared Validators don't happen.
 
