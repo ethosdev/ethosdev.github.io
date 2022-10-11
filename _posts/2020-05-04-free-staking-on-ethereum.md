@@ -10,8 +10,6 @@ Here's three secrets you should know about Ethereum staking and what to do about
 
 You'll want to know about free staking, but more important is doing it with Distributed Validator Technology (DVT) to help maintain network security.
 
-But first, by reporting some facts it can be perceived that there's businesses the author biases.  In truth, there's little bias and don't shoot the messenger :)  The author's bias is for the ecosystem which thrives with all the entities in it, and thrives even better when you, the customer, does well.
-
 ## **Secret #3: You should demand free staking**
 
 You need to know that free staking is possible.
@@ -76,5 +74,5 @@ _Thank you to Dankrad Feist for reviewing a draft and feedback.  As always, rev
 
 * * *
 
-_Update 2022-10-11: Removed sharding, crosslinks, and old terms like eth2. Improve opening and conclusion. See [archive.org](https://web.archive.org/web/20220000000000*/https://ethos.dev/free-staking) for prior versions._
+_Update 2022-10-11: ... See [archive.org](https://web.archive.org/web/20220000000000*/https://ethos.dev/free-staking) for prior versions._
 
