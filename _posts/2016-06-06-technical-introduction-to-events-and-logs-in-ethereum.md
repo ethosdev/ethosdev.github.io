@@ -108,10 +108,12 @@ depositEvent.watch(function(err, result) {
 })
 ```
 
-Improving the efficiency of getting all events for a user is the reason why the _sender parameter to the event is indexed:
+Improving the efficiency of getting all events for a user is the reason why the `_sender` parameter to the event is indexed:
+
 ```solidity
 event Deposit(uint256 indexed _market, address indexed _sender, uint256 _amount, uint256 _time)
 ```
+
 By default, listening for events only starts at the point when the event is instantiated.  When the UI is first loading, there are no deposits to append to.  So we want to retrieve the events since block 0 and that is done by adding a `fromBlock` parameter to the event.
 
 ```solidity
@@ -124,12 +126,15 @@ depositEventAll.watch(function(err, result) {
   // append details of result.args to UI  
 })
 ```
-When the UI is rendered depositEventAll.stopWatching()  should be called.
+
+When the UI is rendered `depositEventAll.stopWatching()` should be called.
 
 ## Aside — Indexed parameters
 
 Up to 3 parameters can be indexed. For example, a proposed token standard has:
+
 `event Transfer(address indexed _from, address indexed _to, uint256 _value)`
+
 This means that a frontend can efficiently just watch for token transfers that are:
 
 -   sent by an address `tokenContract.Transfer({_from: senderAddress})`
@@ -141,7 +146,7 @@ This means that a frontend can efficiently just watch for token transfers that a
 
 Three use cases have been presented for events. First, using an event to simply get a return value from a contract function invoked with sendTransaction(). Second, using an event as an asynchronous trigger with data, that can notify an observer such as a UI. Third, using an event to write logs in the blockchain as a cheaper form of storage. 
 
-This introduction has shown some of the APIs [^5] for working with events. There are other approaches to working with events, logs, and receipts [^6] and these topics can be covered in future articles.
+This introduction has shown some of the APIs[^5] for working with events. There are other approaches to working with events, logs, and receipts[^6] and these topics can be covered in future articles.
 * * *
 _Thanks to Aaron Davis, Vincent Gariepy, and Joseph Lubin for feedback on this article._
 
