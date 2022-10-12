@@ -19,12 +19,12 @@ The terminology between events and logs is another source of confusion and this 
 The simplest use of an event is to pass along return values from contracts, to an app’s frontend. To illustrate, here is the problem.
 
 ```solidity
-contract ExampleContract {
+contract ExampleContract {  
   // some state variables ...  
-  function foo(int256 _value) returns (int256) {
+  function foo(int256 _value) returns (int256) {  
     // manipulate state ...  
     return _value;  
-  }
+  }  
 }
 ```
 
@@ -85,10 +85,10 @@ Nevertheless, there are use cases for using logs as cheap storage, instead of tr
 A cryptocurrency exchange may want to show a user all the deposits that they have performed on the exchange. Instead of storing these deposit details in a contract, it is much cheaper to store them as logs. This is possible because an exchange needs the state of a user’s balance, which it stores in contract storage, but does not need to know about details of historical deposits.
 
 ```solidity
-contract CryptoExchange {
+contract CryptoExchange {  
   event Deposit(uint256 indexed _market, address indexed _sender, uint256 _amount, uint256 _time);
 
-  function deposit(uint256 _amount, uint256 _market) returns (int256) {
+  function deposit(uint256 _amount, uint256 _market) returns (int256) {  
     // perform deposit, update user’s balance, etc  
     Deposit(_market, msg.sender, _amount, now);  
 }
@@ -97,12 +97,13 @@ contract CryptoExchange {
 Suppose we want to update a UI as the user makes deposits. Here is an example of using an event (Deposit) as an asynchronous trigger with data (_market, msg.sender, _amount, now). Assume cryptoExContract is an instance of CryptoExchange:
 
 ```js
-var depositEvent = cryptoExContract.Deposit({_sender: userAddress});
+var depositEvent = cryptoExContract.Deposit({_sender: userAddress});  
 depositEvent.watch(function(err, result) {  
   if (err) {  
     console.log(err)  
     return;  
-  }
+  }  
+  
   // append details of result.args to UI  
 })
 ```
@@ -114,7 +115,7 @@ event Deposit(uint256 indexed _market, address indexed _sender, uint256 _amount,
 By default, listening for events only starts at the point when the event is instantiated.  When the UI is first loading, there are no deposits to append to.  So we want to retrieve the events since block 0 and that is done by adding a `fromBlock` parameter to the event.
 
 ```solidity
-var depositEventAll = cryptoExContract.Deposit({_sender: userAddress}, {fromBlock: 0, toBlock: 'latest'});
+var depositEventAll = cryptoExContract.Deposit({_sender: userAddress}, {fromBlock: 0, toBlock: 'latest'});  
 depositEventAll.watch(function(err, result) {  
   if (err) {  
     console.log(err)  
@@ -127,13 +128,28 @@ When the UI is rendered depositEventAll.stopWatching()  should be called.
 
 ## Aside — Indexed parameters
 
-> Up to 3 parameters can be indexed. For example, a proposed token standard has: event Transfer(address indexed _from, address indexed _to, uint256 _value) . This means that a frontend can efficiently just watch for token transfers that are:
+Up to 3 parameters can be indexed. For example, a proposed token standard has:
+`event Transfer(address indexed _from, address indexed _to, uint256 _value)`
+This means that a frontend can efficiently just watch for token transfers that are:
 
--   sent by an address tokenContract.Transfer({_from: senderAddress})
--   or received by an address tokenContract.Transfer({_to: receiverAddress})
+-   sent by an address `tokenContract.Transfer({_from: senderAddress})`
+-   or received by an address `tokenContract.Transfer({_to: receiverAddress})`
 -   or sent by an address to a specific address  
-    tokenContract.Transfer({_from: senderAddress, _to: receiverAddress})
+    `tokenContract.Transfer({_from: senderAddress, _to: receiverAddress})`
 
 ## Conclusion
 
-Three use cases have been presented for events. First, using an event to simply get a return value from a contract function invoked with sendTransaction(). Second, using an event as an asynchronous trigger with data, that can notify an observer such as a UI. Third, using an event to write logs in the blockchain as a cheaper form of storage. This introduction has shown some of the APIs[[5]](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e#article-reference-5) for working with events. There are other approaches to working with events, logs, and receipts[[6]](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e#article-reference-6) and these topics can be covered in future articles.] _Thanks to Aaron Davis, Vincent Gariepy, and Joseph Lubin for feedback on this article._References[1] web3.js could watch for the transaction to be included the blockchain, then replay the transaction in an instance of the EVM, to get the return value, but this is a significant amount of logic to add to web3.js[2] [https://github.com/ethereum/yellowpaper](https://github.com/ethereum/yellowpaper)[3] There are gas costs of 375 for a LOG operation, and 375 gas per topic, but when many bytes are being stored, these costs represent an insignificant fraction of the total cost of the storage.[4] Merkle proofs for logs are possible, so if an external entity supplies a contract with such a proof, a contract can verify that the log actually exists inside the blockchain.[5] [https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethfilter](https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethfilter)[6] [http://ethereum.stackexchange.com/questions/1381/how-do-i-parse-the-transaction-receipt-log-with-web3-js](http://ethereum.stackexchange.com/questions/1381/how-do-i-parse-the-transaction-receipt-log-with-web3-js)
+Three use cases have been presented for events. First, using an event to simply get a return value from a contract function invoked with sendTransaction(). Second, using an event as an asynchronous trigger with data, that can notify an observer such as a UI. Third, using an event to write logs in the blockchain as a cheaper form of storage. 
+
+This introduction has shown some of the APIs[[5]](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e#article-reference-5) for working with events. There are other approaches to working with events, logs, and receipts[[6]](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e#article-reference-6) and these topics can be covered in future articles.] 
+
+* * *
+_Thanks to Aaron Davis, Vincent Gariepy, and Joseph Lubin for feedback on this article._
+
+References
+[1] web3.js could watch for the transaction to be included the blockchain, then replay the transaction in an instance of the EVM, to get the return value, but this is a significant amount of logic to add to web3.js
+[2] [https://github.com/ethereum/yellowpaper](https://github.com/ethereum/yellowpaper)
+[3] There are gas costs of 375 for a LOG operation, and 375 gas per topic, but when many bytes are being stored, these costs represent an insignificant fraction of the total cost of the storage.
+[4] Merkle proofs for logs are possible, so if an external entity supplies a contract with such a proof, a contract can verify that the log actually exists inside the blockchain.
+[5] [https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethfilter](https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethfilter)
+[6] [http://ethereum.stackexchange.com/questions/1381/how-do-i-parse-the-transaction-receipt-log-with-web3-js](http://ethereum.stackexchange.com/questions/1381/how-do-i-parse-the-transaction-receipt-log-with-web3-js)
