@@ -8,11 +8,13 @@ Did you know that one of the largest exchanges already provides free staking?
 
 Here's three secrets you should know about Ethereum staking and what to do about them.
 
-You'll want to know about free staking, but more important is doing it with Distributed Validator Technology (DVT) to help maintain network security.
+You'll want to know about free staking, but more important is staking with Distributed Validator Technology (DVT) to help maintain network security.
 
 ## **Secret #3: You should demand free staking**
 
 You need to know that free staking is possible.
+
+Althought most staking companies pools charge fees starting at 10%, 
 
 As [reported last month](https://www.theblockcrypto.com/linked/60916/coinbase-custody-is-the-biggest-tezos-staking-service-despite-charging-higher-fees):
 
