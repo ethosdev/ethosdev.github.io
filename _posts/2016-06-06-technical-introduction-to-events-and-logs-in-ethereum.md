@@ -19,12 +19,12 @@ The terminology between events and logs is another source of confusion and this 
 The simplest use of an event is to pass along return values from contracts, to an app’s frontend. To illustrate, here is the problem.
 
 ```solidity
-contract ExampleContract {  
+contract ExampleContract {
   // some state variables ...  
-  function foo(int256 _value) returns (int256) {  
+  function foo(int256 _value) returns (int256) {
     // manipulate state ...  
     return _value;  
-  }  
+  }
 }
 ```
 
@@ -76,27 +76,54 @@ Return values are a minimal use case for events, and events can be generally con
 
 ## 3) a cheaper form of storage
 
-The third use case is quite different from what’s been covered, and that is using events as a significantly cheaper form of storage. In the Ethereum Virtual Machine (EVM) and Ethereum Yellow Paper[[2]](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e#article-reference-2), events are referred to as logs (there are LOG opcodes). When speaking of storage, it would be technically more accurate to say that data can be stored in logs, as opposed to data being stored in events. However, when we go a level above the protocol, it is more accurate to say that contracts emit or trigger events which the frontend can react to. Whenever an event is emitted, the corresponding logs are written to the blockchain. The terminology between events and logs is another source of confusion, because the context dictates which term is more accurate.Logs were designed to be a form of storage that costs significantly less gas than contract storage. Logs basically[[3]](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e#article-reference-3) cost 8 gas per byte, whereas contract storage costs 20,000 gas per 32 bytes. Although logs offer gargantuan gas savings, logs are not accessible from any contracts[[4]](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e#article-reference-4).Nevertheless, there are use cases for using logs as cheap storage, instead of triggers for the frontend.  A suitable example for logs is storing historical data that can be rendered by the frontend.A cryptocurrency exchange may want to show a user all the deposits that they have performed on the exchange. Instead of storing these deposit details in a contract, it is much cheaper to store them as logs. This is possible because an exchange needs the state of a user’s balance, which it stores in contract storage, but does not need to know about details of historical deposits.contract CryptoExchange {  
-  event Deposit(uint256 indexed _market, address indexed _sender, uint256 _amount, uint256 _time);function deposit(uint256 _amount, uint256 _market) returns (int256) {  
+The third use case is quite different from what’s been covered, and that is using events as a significantly cheaper form of storage. In the Ethereum Virtual Machine (EVM) and Ethereum Yellow Paper[[2]](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e#article-reference-2), events are referred to as logs (there are LOG opcodes). When speaking of storage, it would be technically more accurate to say that data can be stored in logs, as opposed to data being stored in events. However, when we go a level above the protocol, it is more accurate to say that contracts emit or trigger events which the frontend can react to. Whenever an event is emitted, the corresponding logs are written to the blockchain. The terminology between events and logs is another source of confusion, because the context dictates which term is more accurate.
+
+Logs were designed to be a form of storage that costs significantly less gas than contract storage. Logs basically[[3]](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e#article-reference-3) cost 8 gas per byte, whereas contract storage costs 20,000 gas per 32 bytes. Although logs offer gargantuan gas savings, logs are not accessible from any contracts[[4]](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e#article-reference-4).
+
+Nevertheless, there are use cases for using logs as cheap storage, instead of triggers for the frontend.  A suitable example for logs is storing historical data that can be rendered by the frontend.
+
+A cryptocurrency exchange may want to show a user all the deposits that they have performed on the exchange. Instead of storing these deposit details in a contract, it is much cheaper to store them as logs. This is possible because an exchange needs the state of a user’s balance, which it stores in contract storage, but does not need to know about details of historical deposits.
+
+```solidity
+contract CryptoExchange {
+  event Deposit(uint256 indexed _market, address indexed _sender, uint256 _amount, uint256 _time);
+
+  function deposit(uint256 _amount, uint256 _market) returns (int256) {
     // perform deposit, update user’s balance, etc  
     Deposit(_market, msg.sender, _amount, now);  
-}  
+}
+```
   
-Suppose we want to update a UI as the user makes deposits. Here is an example of using an event (Deposit) as an asynchronous trigger with data (_market, msg.sender, _amount, now). Assume cryptoExContract is an instance of CryptoExchange:var depositEvent = cryptoExContract.Deposit({_sender: userAddress});  
+Suppose we want to update a UI as the user makes deposits. Here is an example of using an event (Deposit) as an asynchronous trigger with data (_market, msg.sender, _amount, now). Assume cryptoExContract is an instance of CryptoExchange:
+
+```js
+var depositEvent = cryptoExContract.Deposit({_sender: userAddress});
 depositEvent.watch(function(err, result) {  
   if (err) {  
     console.log(err)  
     return;  
-  }  
+  }
   // append details of result.args to UI  
-})Improving the efficiency of getting all events for a user is the reason why the _sender parameter to the event is indexed: event Deposit(uint256 indexed _market, address indexed _sender, uint256 _amount, uint256 _time)By default, listening for events only starts at the point when the event is instantiated.  When the UI is first loading, there are no deposits to append to.  So we want to retrieve the events since block 0 and that is done by adding a `fromBlock` parameter to the event.var depositEventAll = cryptoExContract.Deposit({_sender: userAddress}, {fromBlock: 0, toBlock: 'latest'});  
+})
+```
+
+Improving the efficiency of getting all events for a user is the reason why the _sender parameter to the event is indexed:
+```solidity
+event Deposit(uint256 indexed _market, address indexed _sender, uint256 _amount, uint256 _time)
+```
+By default, listening for events only starts at the point when the event is instantiated.  When the UI is first loading, there are no deposits to append to.  So we want to retrieve the events since block 0 and that is done by adding a `fromBlock` parameter to the event.
+
+```solidity
+var depositEventAll = cryptoExContract.Deposit({_sender: userAddress}, {fromBlock: 0, toBlock: 'latest'});
 depositEventAll.watch(function(err, result) {  
   if (err) {  
     console.log(err)  
     return;  
   }  
   // append details of result.args to UI  
-})When the UI is rendered depositEventAll.stopWatching()  should be called.
+})
+```
+When the UI is rendered depositEventAll.stopWatching()  should be called.
 
 ## Aside — Indexed parameters
 
