@@ -35,7 +35,7 @@ var returnValue = exampleContract.foo.call(2);
 console.log(returnValue) // 2
 ```
 
-However, when web3.js submits the contract call as a transaction, it cannot obtain the return value[[1]](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e#article-reference-1):
+However, when web3.js submits the contract call as a transaction, it cannot obtain the return value[^1]:
 
 ```js
 var returnValue = exampleContract.foo.sendTransaction(2, {from: web3.eth.coinbase});  
@@ -76,9 +76,9 @@ Return values are a minimal use case for events, and events can be generally con
 
 ## 3) a cheaper form of storage
 
-The third use case is quite different from what’s been covered, and that is using events as a significantly cheaper form of storage. In the Ethereum Virtual Machine (EVM) and Ethereum Yellow Paper[[2]](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e#article-reference-2), events are referred to as logs (there are LOG opcodes). When speaking of storage, it would be technically more accurate to say that data can be stored in logs, as opposed to data being stored in events. However, when we go a level above the protocol, it is more accurate to say that contracts emit or trigger events which the frontend can react to. Whenever an event is emitted, the corresponding logs are written to the blockchain. The terminology between events and logs is another source of confusion, because the context dictates which term is more accurate.
+The third use case is quite different from what’s been covered, and that is using events as a significantly cheaper form of storage. In the Ethereum Virtual Machine (EVM) and Ethereum Yellow Paper[^2], events are referred to as logs (there are LOG opcodes). When speaking of storage, it would be technically more accurate to say that data can be stored in logs, as opposed to data being stored in events. However, when we go a level above the protocol, it is more accurate to say that contracts emit or trigger events which the frontend can react to. Whenever an event is emitted, the corresponding logs are written to the blockchain. The terminology between events and logs is another source of confusion, because the context dictates which term is more accurate.
 
-Logs were designed to be a form of storage that costs significantly less gas than contract storage. Logs basically[[3]](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e#article-reference-3) cost 8 gas per byte, whereas contract storage costs 20,000 gas per 32 bytes. Although logs offer gargantuan gas savings, logs are not accessible from any contracts[[4]](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e#article-reference-4).
+Logs were designed to be a form of storage that costs significantly less gas than contract storage. Logs basically[^3] cost 8 gas per byte, whereas contract storage costs 20,000 gas per 32 bytes. Although logs offer gargantuan gas savings, logs are not accessible from any contracts[^4].
 
 Nevertheless, there are use cases for using logs as cheap storage, instead of triggers for the frontend.  A suitable example for logs is storing historical data that can be rendered by the frontend.
 
@@ -141,15 +141,14 @@ This means that a frontend can efficiently just watch for token transfers that a
 
 Three use cases have been presented for events. First, using an event to simply get a return value from a contract function invoked with sendTransaction(). Second, using an event as an asynchronous trigger with data, that can notify an observer such as a UI. Third, using an event to write logs in the blockchain as a cheaper form of storage. 
 
-This introduction has shown some of the APIs[[5]](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e#article-reference-5) for working with events. There are other approaches to working with events, logs, and receipts[[6]](https://media.consensys.net/technical-introduction-to-events-and-logs-in-ethereum-a074d65dd61e#article-reference-6) and these topics can be covered in future articles.] 
-
+This introduction has shown some of the APIs [^5] for working with events. There are other approaches to working with events, logs, and receipts [^6] and these topics can be covered in future articles.
 * * *
 _Thanks to Aaron Davis, Vincent Gariepy, and Joseph Lubin for feedback on this article._
 
-References
-[1] web3.js could watch for the transaction to be included the blockchain, then replay the transaction in an instance of the EVM, to get the return value, but this is a significant amount of logic to add to web3.js
-[2] [https://github.com/ethereum/yellowpaper](https://github.com/ethereum/yellowpaper)
-[3] There are gas costs of 375 for a LOG operation, and 375 gas per topic, but when many bytes are being stored, these costs represent an insignificant fraction of the total cost of the storage.
-[4] Merkle proofs for logs are possible, so if an external entity supplies a contract with such a proof, a contract can verify that the log actually exists inside the blockchain.
-[5] [https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethfilter](https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethfilter)
-[6] [http://ethereum.stackexchange.com/questions/1381/how-do-i-parse-the-transaction-receipt-log-with-web3-js](http://ethereum.stackexchange.com/questions/1381/how-do-i-parse-the-transaction-receipt-log-with-web3-js)
+[^1]: web3.js could watch for the transaction to be included the blockchain, then replay the transaction in an instance of the EVM, to get the return value, but this is a significant amount of logic to add to web3.js
+[^2]: [https://github.com/ethereum/yellowpaper](https://github.com/ethereum/yellowpaper)
+[^3]: There are gas costs of 375 for a LOG operation, and 375 gas per topic, but when many bytes are being stored, these costs represent an insignificant fraction of the total cost of the storage.
+[^4]: Merkle proofs for logs are possible, so if an external entity supplies a contract with such a proof, a contract can verify that the log actually exists inside the blockchain.
+[^5]: [https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethfilter](https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethfilter)
+[^6]: [http://ethereum.stackexchange.com/questions/1381/how-do-i-parse-the-transaction-receipt-log-with-web3-js](http://ethereum.stackexchange.com/questions/1381/how-do-i-parse-the-transaction-receipt-log-with-web3-js)
+
