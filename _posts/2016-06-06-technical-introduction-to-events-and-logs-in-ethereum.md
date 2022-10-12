@@ -4,7 +4,7 @@ description: "An introduction to use cases for events and logs on the Ethereum b
 permalink: /events-and-logs-in-ethereum/
 ---
 
-Events and logs are important in  [Ethereum](https://consensys.net/knowledge-base/about-ethereum-eth/)  because they facilitate communication between smart contracts and their user interfaces. In traditional web development, a server response is provided in a callback to the frontend. In Ethereum, when a transaction is mined, smart contracts can emit events and write logs to the  [blockchain](https://consensys.net/knowledge-base/about-blockchain-technology/)  that the frontend can then process. There are different ways to address events and logs. This technical introduction will explain some sources of confusion regarding events and some sample code for working with them.
+Events and logs are important in Ethereum because they facilitate communication between smart contracts and their user interfaces. In traditional web development, a server response is provided in a callback to the frontend. In Ethereum, when a transaction is included on-chain, smart contracts can emit events and write logs to the blockchain that the frontend can then process. There are different ways to address events and logs. This technical introduction will explain some sources of confusion regarding events and some sample code for working with them.
 
 Events can be confusing because they can be used in different ways. An event for one may not look like an event for another. There are 3 main use cases for events and logs:
 
@@ -154,6 +154,6 @@ _Thanks to Aaron Davis, Vincent Gariepy, and Joseph Lubin for feedback on this a
 [^2]: [https://github.com/ethereum/yellowpaper](https://github.com/ethereum/yellowpaper)
 [^3]: There are gas costs of 375 for a LOG operation, and 375 gas per topic, but when many bytes are being stored, these costs represent an insignificant fraction of the total cost of the storage.
 [^4]: Merkle proofs for logs are possible, so if an external entity supplies a contract with such a proof, a contract can verify that the log actually exists inside the blockchain.
-[^5]: [https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethfilter](https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethfilter)
+[^5]: [https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethfilter](https://github.com/web3/web3.js/blob/0.20.7/DOCUMENTATION.md#web3ethfilter)
 [^6]: [http://ethereum.stackexchange.com/questions/1381/how-do-i-parse-the-transaction-receipt-log-with-web3-js](http://ethereum.stackexchange.com/questions/1381/how-do-i-parse-the-transaction-receipt-log-with-web3-js)
 
