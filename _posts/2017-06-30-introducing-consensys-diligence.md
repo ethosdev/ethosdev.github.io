@@ -14,7 +14,7 @@ Let’s not forget the lessons learned from ‘[The DAO](https://media.consensys
   
 To usher in the new era of decentralized innovation, we need people to participate in the ecosystem — a lot of people. And we need their optimism to work for them, not against them. We need the community to help each other and watch out for each other. That’s why we created ConsenSys Diligence.
 
-# ConsenSys Diligence: Raising the bar for security best practices in the Ethereum ecosystem
+## ConsenSys Diligence: Raising the bar for security best practices in the Ethereum ecosystem
 
 **ConsenSys Diligence** is committed to improving the Ethereum ecosystem by promoting technical excellence, security best practices, legal precautions, and ethical business practices.  
   
@@ -26,9 +26,9 @@ In the future, we plan to expand these services to include assessment of legal s
   
 As a part of ConsenSys,  **our incentives are aligned with the long-term health of the ecosystem rather than short-term revenue.** The ecosystem will always be our priority — over potential clients, business practices, and revenues. When there is a conflict between what a client desires and what’s good for the ecosystem, we side with the ecosystem. When we discover code or actions that are not improving the ecosystem and community, our priority is to inform the community about them.
 
-# Want to work with us?
+## Want to work with us?
 
-## Projects:
+### Projects:
 
 Were looking to work with clients who:
 
