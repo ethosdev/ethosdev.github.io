@@ -30,7 +30,7 @@ At the start of a transaction, the Ether required for the startGas is set aside,
 
 In the following mock scenario, assume that a STORE consumes 45 gas and an ADD consumes 10 gas. The scenario involves storing the number 31 in the EVM, summing 2 numbers, and then storing the sum. Let’s assume that the originator specified a startGas of 150 and a gas price of 0.02µETH. Below is an illustration as the transaction is processed by the EVM:
 
-![](https://miro.medium.com/max/700/1*AqVnHbTHoAHUUO8cswvBkg.png)
+{% include pic.html img="example.png" alt="Simple example" %}
 
 The originator pays the miner a fee of:
 
@@ -40,7 +40,7 @@ The originator pays the miner a fee of:
 
 There is a difference between an originator providing enough fuel and providing enough fees. Here are the likely effects on a transaction:
 
-![](https://miro.medium.com/max/700/1*CLPPC0N0T6Okmvrr8eAlhw.png)
+{% include pic.html img="fuel-vs-fee.png" alt="Fuel vs Fee effects on a transaction" %}
 
 A transaction with too little fuel will not even reach miners, regardless of the fee supplied. If adequate fuel is provided for a transaction, but the fee is too low, even though the transaction may reach miners, upon seeing the fee miners will not perform any computation. Fees determine the order in which transactions will be included in the blockchain. The reason why providing high fuel can lead to a transaction taking longer to get mined is discussed below in [Potential delays with high startGas](#potential-delays-with-high-startgas).
 
@@ -60,7 +60,7 @@ A transaction offers the maximum amount of fuel it is willing to consume. This g
 
 Let’s use the same scenario as the first example, but this time the originator specifies a startGas of 90 (instead of 150). Here’s an illustration of the execution:
 
-![](https://miro.medium.com/max/700/1*8ZnV9In5EyMkPTI8lkw7Xg.png)
+{% include pic.html img="out-of-gas.png" alt="Out of gas example" %}
 
 At the start of the transaction, the originator must set aside funds for all the fuel: startGas × gas price = Ether placed in escrow. The amount of Ether in escrow is:
 
