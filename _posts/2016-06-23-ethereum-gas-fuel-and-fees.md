@@ -42,7 +42,7 @@ There is a difference between an originator providing enough fuel and providing 
 
 ![](https://miro.medium.com/max/700/1*CLPPC0N0T6Okmvrr8eAlhw.png)
 
-A transaction with too little fuel will not even reach miners, regardless of the fee supplied. If adequate fuel is provided for a transaction, but the fee is too low, even though the transaction may reach miners, upon seeing the fee miners will not perform any computation. Fees determine the order in which transactions will be included in the blockchain. The reason why providing high fuel can lead to a transaction taking longer to get mined is discussed in this article in the section  _Potential delays with high startGas_.
+A transaction with too little fuel will not even reach miners, regardless of the fee supplied. If adequate fuel is provided for a transaction, but the fee is too low, even though the transaction may reach miners, upon seeing the fee miners will not perform any computation. Fees determine the order in which transactions will be included in the blockchain. The reason why providing high fuel can lead to a transaction taking longer to get mined is discussed below in [Potential delays with high startGas](#potential-delays-with-high-startgas).
 
 # **startGas**
 
