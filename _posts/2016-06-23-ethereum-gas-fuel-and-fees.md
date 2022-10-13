@@ -56,7 +56,7 @@ startGas keeps things simple (away from say a pay as gas is consumed approach) b
 
 # **Out of Gas exception**
 
-A transaction offers the maximum amount of fuel it is willing to consume. This gas is consumed with each operation of the EVM. If all the gas is consumed without the transaction being completed, an Out of Gas exception occurs. The originator pays the miner for all the work that’s been performed and the transaction is included in a block, but all state changes (such as contracts created, values stored, and  [logs](https://media.consensys.net/2016/06/06/technical-introduction-to-events-and-logs-in-ethereum)  written) are reverted.
+A transaction offers the maximum amount of fuel it is willing to consume. This gas is consumed with each operation of the EVM. If all the gas is consumed without the transaction being completed, an Out of Gas exception occurs. The originator pays the miner for all the work that’s been performed and the transaction is included in a block, but all state changes (such as contracts created, values stored, and  [logs]({% post_url 2016-06-06-technical-introduction-to-events-and-logs-in-ethereum %})  written) are reverted.
 
 Let’s use the same scenario as the first example, but this time the originator specifies a startGas of 90 (instead of 150). Here’s an illustration of the execution:
 
