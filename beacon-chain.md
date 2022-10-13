@@ -18,7 +18,7 @@ Ethereum's Beacon Chain will be illustrated with examples at the right level to 
 
 The Beacon Chain provides the heartbeat to Ethereum's consensus. Each slot is 12 seconds and an epoch is 32 slots: 6.4 minutes.
 
-{% include fig.html url="images/Beacon-Chain-Slots-and-Epochs.png" alt="The Beacon Chain has slots of 12 seconds and 32 slots in an epoch which is 6.4 minutes. Genesis blocks are at Slot 0." caption="The first 32 slots are in Epoch 0. Genesis blocks are at Slot 0." %}
+{% include fig.html img="Beacon-Chain-Slots-and-Epochs.png" alt="The Beacon Chain has slots of 12 seconds and 32 slots in an epoch which is 6.4 minutes. Genesis blocks are at Slot 0." caption="The first 32 slots are in Epoch 0. Genesis blocks are at Slot 0." %}
 
 A slot is a chance for a block to be added to the Beacon Chain. Every 12 seconds, one block is added when the system is running optimally. Validators do need to be roughly [synchronized with time.](https://ethresear.ch/t/network-adjusted-timestamps/4187)
 
@@ -32,7 +32,7 @@ A block **proposer** is a validator that has been pseudorandomly selected to bui
 
 Most of the time, validators are **attesters** that vote on blocks.  These votes are recorded in the Beacon Chain and determine the head of the Beacon Chain.
 
-{% include fig.html url="images/Beacon-Chain-Validators.png" alt="Validators proposing blocks and getting rewards. A missed proposal for some epoch's 28th slot." caption="A missed proposal for some epoch's 28th slot." %}
+{% include fig.html img="Beacon-Chain-Validators.png" alt="Validators proposing blocks and getting rewards. A missed proposal for some epoch's 28th slot." caption="A missed proposal for some epoch's 28th slot." %}
 
 At every epoch, a validator is pseudorandomly assigned to a slot.
 
@@ -56,11 +56,11 @@ A committee is a group of validators.  For security, each slot has committees o
 
 The concept of a randomness beacon that emits random numbers for the public, lends its name to the Ethereum Beacon Chain. The Beacon Chain enforces consensus on a pseudorandom process called RANDAO.
 
-{% include fig.html url="images/Beacon-Chain-RANDAO.png" alt="Pseudorandom RANDAO process selecting proposers and committees for slots" caption="At every epoch, a pseudorandom process RANDAO selects proposers for each slot, and shuffles validators to committees." %}
+{% include fig.html img="Beacon-Chain-RANDAO.png" alt="Pseudorandom RANDAO process selecting proposers and committees for slots" caption="At every epoch, a pseudorandom process RANDAO selects proposers for each slot, and shuffles validators to committees." %}
 
 Proposers are selected by RANDAO with a weighting on the validator's balance.  It's possible a validator is a proposer and committee member for the same slot, but it's not the norm. The probability of this happening is 1/32 so we’ll see it about once per epoch. The sketch depicts a scenario with less than 8,192 validators, otherwise there would be at least two committees per slot.
 
-{% include fig.html url="images/Beacon-Chain-Committees.png" alt="3 slots and 3 examples of how committee validators attest to their view of the Beacon Chain head" %}
+{% include fig.html img="Beacon-Chain-Committees.png" alt="3 slots and 3 examples of how committee validators attest to their view of the Beacon Chain head" %}
 
 The diagram is a combined depiction of what happened in three slots. In Slot 1, a block is proposed and then attested to by two validators; one validator in Committee A was offline. The attestations and block at Slot 1 propagate the network and reach many validators. In Slot 2, a block is proposed and a validator in Committee B does not see it, thus it attests that the Beacon Chain head is the block at Slot 1.  Note this validator is different from the offline validator from Slot 1. **Attesting to the Beacon Chain head is called an LMD GHOST vote.** In Slot 3, all validators in Committee C run the LMD GHOST fork choice rule, and independently attest to the same head.
 
@@ -72,7 +72,7 @@ A validator can only be in one committee per epoch. Typically, there are more th
 
 A checkpoint is a block in the first slot of an epoch.  If there is no such block, then the checkpoint is the preceding most recent block.  There is always one checkpoint block per epoch. A block can be the checkpoint for multiple epochs.
 
-{% include fig.html url="images/Beacon-Chain-Checkpoints.jpg" alt="Checkpoint is same for Epoch 1 and Epoch 2" caption="Checkpoints for a scenario where epochs contain 64 slots." %}
+{% include fig.html img="Beacon-Chain-Checkpoints.jpg" alt="Checkpoint is same for Epoch 1 and Epoch 2" caption="Checkpoints for a scenario where epochs contain 64 slots." %}
 
 Note Slot 65 to Slot 128 are empty. The Epoch 2 checkpoint would have been the block at Slot 128. Since the slot is missing, the Epoch 2 checkpoint is the previous block at Slot 64. Epoch 3 is similar: Slot 192 is empty, thus the previous block at Slot 180 is the Epoch 3 checkpoint.
 
@@ -92,7 +92,7 @@ If a checkpoint B is justified and the checkpoint in the immediate next epoch be
 
 On average, a user transaction would be in a block in the middle of an epoch. It's half an epoch until the next checkpoint, suggesting transaction finality of 2.5 epochs: 16 minutes.  Optimally, more than ⅔ of attestations will have been included by the 22nd slot of an epoch. Thus, transaction finality is an average of 14 minutes (16+32+22 slots). Block confirmations emerge from a block's attestations, to its justification, to its finality.  Use cases can decide whether they need finality or an earlier safety threshold is sufficient.
 
-{% include fig.html url="images/Beacon-Chain-Justification-and-Finalization.png" alt="One checkpoint getting justified and causing its prior checkpoint to be finalized" caption="An example of one checkpoint getting justified (Slot 64) and finalizing a prior checkpoint (Slot 32)." %}
+{% include fig.html img="Beacon-Chain-Justification-and-Finalization.png" alt="One checkpoint getting justified and causing its prior checkpoint to be finalized" caption="An example of one checkpoint getting justified (Slot 64) and finalizing a prior checkpoint (Slot 32)." %}
 
 To simplify the following narratives, assume that validators all have the same balance.
 
@@ -150,13 +150,13 @@ A **surround vote** is a validator casting an FFG vote that _surrounds_ or is _s
 
 A **double vote** is a validator casting 2 FFG votes for any two targets at the same epoch.  This can happen during a fork.
 
-{% include fig.html url="images/Casper-FFG-Double-Vote-Example-1.png" alt="A Casper FFG double vote with both targets in Epoch 4" caption="In blue, the 2 FFG votes with both targets in Epoch 4, are a double vote when cast by the same validator." %}
+{% include fig.html img="Casper-FFG-Double-Vote-Example-1.png" alt="A Casper FFG double vote with both targets in Epoch 4" caption="In blue, the 2 FFG votes with both targets in Epoch 4, are a double vote when cast by the same validator." %}
 
 The blue arrows are two FFG votes, one voting for a target block at Slot 128 on the left fork, and another voting for a target block at Slot 128 on the right fork.  A validator casting both votes, commits a slashable offence called double voting.  Above is an example of a double vote where the source checkpoints are different.
 
 Next, a scenario where a double vote has the same source (Epoch 0 checkpoint) and the targets are different.
 
-{% include fig.html url="images/Casper-FFG-Double-Vote-Example-2.png" alt="A double vote example where both targets are in Epoch 1" caption="FFG votes for both targets at Epoch 1, blocks 64 and \"63\", would be a double vote." %}
+{% include fig.html img="Casper-FFG-Double-Vote-Example-2.png" alt="A double vote example where both targets are in Epoch 1" caption="FFG votes for both targets at Epoch 1, blocks 64 and \"63\", would be a double vote." %}
 
 The upper fork has an Epoch 1 checkpoint of "block 64".  The lower fork has an Epoch 1 checkpoint of "block 63".  (Because there was no block proposed at Slot 64 in the lower fork; recall the section on Beacon Chain Checkpoints.) Voting for an Epoch 1 target of "block 64", and an Epoch 1 target of "block 63", is a double vote.  A double vote is when a validator casts FFG votes for two targets at the same epoch.
 
@@ -182,7 +182,7 @@ In any voluntary or forced exit, there is a delay of four epochs before stakers 
 
 Further technical details are described in [A note on Ethereum 2.0 phase 0 validator lifecycle](https://notes.ethereum.org/7CFxjwMgQSWOHIxLgJP2Bw#A-note-on-Ethereum-20-phase-0-validator-lifecycle) including this flowchart:
 
-{% include fig.html url="images/Beacon-Chain-Validator-Lifecycle.png" alt="Beacon Chain Validator Lifecycle" %}
+{% include fig.html img="Beacon-Chain-Validator-Lifecycle.png" alt="Beacon Chain Validator Lifecycle" %}
 
 To avoid large changes in the validator set in a short amount of time, there are mechanisms limiting how many validators can be activated or exited within an epoch.  For example, these make it more difficult to activate many validators quickly to attack the system.
 
