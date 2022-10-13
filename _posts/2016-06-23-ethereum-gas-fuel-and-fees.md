@@ -48,11 +48,11 @@ A transaction with too little fuel will not even reach miners, regardless of the
 
 Let’s discuss the fuel needs at the start of a transaction. Abstractly, before allowing use of its computation and storage, the World Computer needs to know if the originator can pay for it. Concretely, before processing a transaction, a miner needs to know if it will get paid. A transaction must offer the maximum amount of fuel it is willing to consume. For this article’s purposes, this offer will be called  **startGas**. startGas is an essential part of a transaction. Unfortunately, different documentation has used different words to describe this critical component:
 
--   startGas is the term in the  [Ethereum White Paper](https://github.com/ethereum/wiki/wiki/White-Paper)
--   gasLimit is the term in the  [Ethereum Yellow Paper](https://github.com/ethereum/yellowpaper),
--   software, such as  [Geth](https://github.com/ethereum/go-ethereum/releases)  and  [web3.js](https://github.com/ethereum/web3.js/releases), simply uses the term “gas”.
+-   startGas is the term in the  [Ethereum White Paper](https://ethereum.org/669c9e2e2027310b6b3cdce6e1c52962/Ethereum_Whitepaper_-_Buterin_2014.pdf)
+-   gasLimit is the term in the  [Ethereum Yellow Paper](https://github.com/ethereum/yellowpaper)
+-   software, such as go-ethereum and web3.js, simply uses the term “gas”
 
-startGas keeps things simple (away from say a pay as gas is consumed approach) because it is impossible for a miner, in the general case, to know how much computation is required without running the actual computation (related to the  [Halting problem](https://en.wikipedia.org/wiki/Halting_problem)). As a user of an Ethereum application, it may seem complicated to have to provide startGas, but developers have some tools for estimating startGas and hiding the details from the user.
+startGas keeps things simple (away from say a pay as gas is consumed approach) because it is impossible for a miner, in the general case, to know how much computation is required without running the actual computation (related to the Halting problem). As a user of an Ethereum application, it may seem complicated to have to provide startGas, but developers have some tools for estimating startGas and hiding the details from the user.
 
 # **Out of Gas exception**
 
