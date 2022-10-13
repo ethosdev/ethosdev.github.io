@@ -1,7 +1,7 @@
 ---
 title: "Ethereum Gas, Fuel & Fees"
 description: "TODO"
-permalink: /ethereum-gas/
+permalink: ethereum-gas
 ---
 
 Ethereum is a platform for decentralized and truthful applications that run on a global, peer-to-peer network without any administrators or a single point of failure. These applications have zero downtime and anyone can create them: it is permissionless innovation. The applications are truthful, immutable and always interoperate as they are coded. From this perspective, the terminology of smart contracts is reasonable in that they are the ultimate in contracts that always follow the terms set at their creation.
@@ -22,7 +22,7 @@ With an overview from the perspective of fuel, let’s turn to an overview of fe
 
 Here is a summary of the influences of transaction fuel and transaction fee:
 
-![](https://miro.medium.com/max/700/1*nKpKsQGMHdw5neRz04Mzxw.png)
+{% include pic.html img="fuel-fee.png" alt="Table of influences of transaction fuel and transaction fee" %}
 
 At the start of a transaction, the Ether required for the startGas is set aside, and the remainingGas is set to startGas. With each operation of the transaction, gas is consumed and remainingGas is lowered. If there’s an Out of Gas exception, all operations are reverted and all the Ether that was initially set aside is given to the miner. If the transaction completes successfully, all the remainingGas is refunded to the originator and the rest is paid to the miner.
 
