@@ -1,10 +1,10 @@
 ---
 title: "Audit the Deployed Smart Contract, Not Github!"
-description: "Best practice audits on a smart contract should be performed on a release candidate (RC), which should be deployed on mainnet before an audit is performed."
+description: "Best practice smart contract audits should be performed on a release candidate, which should be deployed on Ethereum mainnet before an audit is performed."
 permalink: audit-deployed-smart-contract
 ---
 
-_Best practice audits on a smart contract should be performed on a release candidate (RC), which should be deployed on mainnet before an audit is performed._
+_Best practice smart contract audits should be performed on a release candidate, which should be deployed on Ethereum mainnet before an audit is performed._
 
 Suppose Mallory is looking to have her smart contract audited so she gives  [Bob](https://en.wikipedia.org/wiki/Alice_and_Bob), her auditor, some git hash, or (gasp!) a zip file of the source code. Mallory has taken care to follow the first rule of a responsible token sale by implementing a staggered release of funds and vesting contracts. Bob clones the repo, audits and reports issues, checks the fixes, and proclaims the audit is completed. Mallory announces the audit results, launches her ICO, and collects millions. The next day, however, all the funds, which were supposedly locked, have been sent to mysterious addresses and Mallory is never to be found again. A simple post-mortem finds that the smart contract Mallory deployed had a subtle backdoor that was added to the source code Bob had audited.
 
@@ -54,4 +54,4 @@ In practice, we don't really see such contracts that support two states breaking
 
 Auditing deployed smart contracts is the closest thing to auditing what users will actually interact with. If you're an auditor, ask your clients for their mainnet contract addresses: it will save everyone time, make the audit process more secure, and help tap into ecosystem synergies. Learnings from this methodology will be described in a future post.
 * * *
-_Thanks to Maurelian, Gonçalo Sá, Alex Luoyuan, Eva Shon, and Bernhard Mueller for providing feedback on this article._
+_Thanks to Maurelian, Gonçalo Sá, Alex Luoyuan, Eva Shon, and Bernhard Mueller for feedback._
