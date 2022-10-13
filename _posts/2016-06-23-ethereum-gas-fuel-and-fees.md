@@ -1,7 +1,7 @@
 ---
 title: "Ethereum Gas, Fuel & Fees"
-description: "TODO"
-permalink: ethereum-gas
+description: "Everything about Ethereum gas and fees is explained with examples, including Out of Gas exceptions, gas refunds, the block gas limit, and metering vs. fees."
+permalink: ethereum-gas-fees
 ---
 
 Ethereum is a platform for decentralized and truthful applications that run on a global, peer-to-peer network without any administrators or a single point of failure. These applications have zero downtime and anyone can create them: it is permissionless innovation. The applications are truthful, immutable and always interoperate as they are coded. From this perspective, the terminology of smart contracts is reasonable in that they are the ultimate in contracts that always follow the terms set at their creation.
