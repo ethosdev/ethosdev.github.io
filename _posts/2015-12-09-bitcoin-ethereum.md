@@ -1,3 +1,9 @@
+---
+title: "Trustless exchange and pegging of Bitcoin in Ethereum"
+description: "TODO"
+permalink: bitcoin-ethereum
+---
+
 Ethereum wouldn’t be where it is today without its older cousin, Bitcoin. Ever since it launched, there’s been critique about the requirement of launching a completely separate blockchain, with its own cryptographic token securing its network. For various reasons, it was decided it must be separate and after a year of development, Ethereum went live on 30 July 2015. It doesn’t mean these cousins won’t ever to get to hang out again! There’s been thoughts of getting bitcoin (the token) over to Ethereum or adding Ethereum (virtual machine) support to Bitcoin. A thought-provoking  [whitepaper, published](http://www.rootstock.io/#white-paper)  last week by Rootstock, spurred discussion about this interplay and extending smart contracts to Bitcoin.
 
 ## **Overview of a Typical 2-way Peg**
