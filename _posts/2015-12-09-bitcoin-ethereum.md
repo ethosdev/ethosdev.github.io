@@ -1,6 +1,6 @@
 ---
-title: "Trustless exchange and pegging of Bitcoin in Ethereum"
-description: "TODO"
+title: "Trustless Exchange and Pegging of Bitcoin in Ethereum"
+description: "Trustless exchange, pegging, and interoperability of Bitcoin and Ethereum. 3 methods are illustrated: a 2-way peg, BTC Relay, and a trustless bonded peg."
 permalink: bitcoin-ethereum
 ---
 
