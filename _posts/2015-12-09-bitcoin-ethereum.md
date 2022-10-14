@@ -6,7 +6,7 @@ permalink: bitcoin-ethereum
 
 Ethereum wouldn’t be where it is today without its older cousin, Bitcoin. Ever since it launched, there’s been critique about the requirement of launching a completely separate blockchain, with its own cryptographic token securing its network. For various reasons, it was decided it must be separate and after a year of development, Ethereum went live on 30 July 2015. It doesn’t mean these cousins won’t ever to get to hang out again! There’s been thoughts of getting bitcoin (the token) over to Ethereum or adding Ethereum (virtual machine) support to Bitcoin. A thought-provoking whitepaper, published last week by Rootstock, spurred discussion about this interplay and extending smart contracts to Bitcoin.
 
-## **Overview of a Typical 2-way Peg**
+## Overview of a Typical 2-way Peg
 
 The typical example of interoperability with Bitcoin and Ethereum is via a 2-way peg.
 
@@ -36,7 +36,7 @@ The Ethereum Virtual Machine (EVM) was designed to be able to write Ethereum sma
 
 [BTC Relay](http://btcrelay.org/)  implements Bitcoin SPV (simplified payment verification) to verify whether any Bitcoin transaction has been confirmed (sufficiently) on the Bitcoin blockchain. So any transactions in the Bitcoin system, from payments to the locking of BTC, can be verified by an Ethereum contract.
 
-**1) Decentralized exchange of BTC & ETH (works currently)**
+## Decentralized exchange of BTC & ETH (works currently)
 
 Currently, BTC Relay allows a smart contract to automatically dispense ETH once the relay has verified that BTC were sent to a specific address. This provides a trustless way for a user that has BTC, to obtain ETH. Alternatively, using the same ETH-BTC swap mechanism, if a user wants BTC, they can deposit ETH into the contract which monitors whether a certain Bitcoin address receives sufficient funds. When an ETH purchaser sends BTC, the relay then verifies this Bitcoin transaction, upon which the ETH is then transferred. If the transaction does not occur in Bitcoin by a certain point in time, then the original owner of the ETH can send BTC to themselves to withdraw their ETH from the contract.
 
@@ -46,7 +46,7 @@ Currently Litecoin is being used to move “bitcoin” between exchange platform
 
 With a liquid decentralized exchange, people with bitcoin will be able to buy whatever tokens they need for the Ethereum dApps they want to use. Whenever they want to get BTC back, they can sell their tokens on the exchange. There is less need to peg 1:1 BTC to E-BTC. However, for those that desire pegging, it is possible in Ethereum, without requiring additional opcodes in Bitcoin.
 
-**2) Trustless Bonded Peg of Bitcoin in Ethereum (works currently)**
+## Trustless Bonded Peg of Bitcoin in Ethereum (works currently)
 
 A problem with 2-way pegging, is that currently, Bitcoin can’t automatically unlock BTC: it can’t verify that E-BTC have been destroyed and then unlock BTC. To solve unlocking BTC, Ethereum will provide incentives, so that humans will unlock the BTC.
 
@@ -56,11 +56,11 @@ This is an overview of what’s possible now.
 
 {% include fig.html img="Trustless-Bonded-Peg.png" alt="Trustless bonded peg of Bitcoin and Ethereum" %}
 
-**3) Currency & Crypto abstraction (requires Bitcoin & Ethereum upgrades)**
+## Currency & Crypto abstraction (requires Bitcoin & Ethereum upgrades)
 
 Ethereum, in an attempt to further modularize and generalize the protocol, plans to implement an abstraction of the cryptography and tokens required in the chain. In this future, ETH deposits will be required to sign new blocks and collect transaction fees, but all other operations can be done by any other token if users so wish. Miners/stakers can accept fees in any Ethereum-based token. In this future, BTC itself, as a BTC-token-on-Ethereum, can also then be used to pay for transactions (alongside Ether and even  TysonCoins).
 
-**Conclusion**
+## Conclusion
 
 Taking stock, it seems there are several ways in which Bitcoin can interact with Ethereum currently and into the future. Adding functionality to Bitcoin, through a sidechain like Rootstock, or trustlessly pegging Bitcoin in Ethereum, both point to a desire to make use of the EVM’s current, more flexible, Turing-complete language. Ethereum is currently live and allows for various dApps to be deployed.
 
