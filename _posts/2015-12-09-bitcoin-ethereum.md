@@ -4,7 +4,7 @@ description: "TODO"
 permalink: bitcoin-ethereum
 ---
 
-Ethereum wouldn’t be where it is today without its older cousin, Bitcoin. Ever since it launched, there’s been critique about the requirement of launching a completely separate blockchain, with its own cryptographic token securing its network. For various reasons, it was decided it must be separate and after a year of development, Ethereum went live on 30 July 2015. It doesn’t mean these cousins won’t ever to get to hang out again! There’s been thoughts of getting bitcoin (the token) over to Ethereum or adding Ethereum (virtual machine) support to Bitcoin. A thought-provoking  [whitepaper, published](http://www.rootstock.io/#white-paper)  last week by Rootstock, spurred discussion about this interplay and extending smart contracts to Bitcoin.
+Ethereum wouldn’t be where it is today without its older cousin, Bitcoin. Ever since it launched, there’s been critique about the requirement of launching a completely separate blockchain, with its own cryptographic token securing its network. For various reasons, it was decided it must be separate and after a year of development, Ethereum went live on 30 July 2015. It doesn’t mean these cousins won’t ever to get to hang out again! There’s been thoughts of getting bitcoin (the token) over to Ethereum or adding Ethereum (virtual machine) support to Bitcoin. A thought-provoking whitepaper, published last week by Rootstock, spurred discussion about this interplay and extending smart contracts to Bitcoin.
 
 ## **Overview of a Typical 2-way Peg**
 
@@ -58,7 +58,7 @@ This is an overview of what’s possible now.
 
 **3) Currency & Crypto abstraction (requires Bitcoin & Ethereum upgrades)**
 
-Ethereum, in an attempt to further modularize and generalize the protocol,  [plans](https://github.com/ethereum/EIPs/issues/28)  to implement an abstraction of the cryptography and tokens required in the chain. In this future, ETH deposits will be required to sign new blocks and collect transaction fees, but all other operations can be done by any other token if users so wish. Miners/stakers can accept fees in any Ethereum-based token. In this future, BTC itself, as a BTC-token-on-Ethereum, can also then be used to pay for transactions (alongside Ether and even  [TysonCoins](http://fightland.vice.com/blog/mike-tyson-launches-the-first-of-100-branded-bitcoin-atms-in-las-vegas)).
+Ethereum, in an attempt to further modularize and generalize the protocol, plans to implement an abstraction of the cryptography and tokens required in the chain. In this future, ETH deposits will be required to sign new blocks and collect transaction fees, but all other operations can be done by any other token if users so wish. Miners/stakers can accept fees in any Ethereum-based token. In this future, BTC itself, as a BTC-token-on-Ethereum, can also then be used to pay for transactions (alongside Ether and even  TysonCoins).
 
 **Conclusion**
 
@@ -66,14 +66,14 @@ Taking stock, it seems there are several ways in which Bitcoin can interact with
 
 Many of the examples listed in the Rootstock whitepaper already exist (active development or launched already) in Ethereum, including:
 
--   Prediction Markets ([groupgnosis.com](http://groupgnosis.com/)  and  [augur.net](http://augur.net/))
--   Decentralized exchange ([etherex.org](http://etherex.org/))
--   Crowdfunding ([wei.fund](http://wei.fund/))
--   Governance ([boardroom.to](http://boardroom.to/))
--   Supply Chain ​Traceability ([provenance.org)](http://provenance.org/)
--   Online Reputation & Digital Identity ([uPort](https://medium.com/@ConsenSys/uport-the-wallet-is-the-new-browser-b133a83fe73))
--   Micropayment channels and Hub-and-Spoke networks ([Raiden](https://github.com/heikoheiko/raiden))
+-   Prediction Markets (groupgnosis.com and augur.net)
+-   Decentralized exchange (etherex.org)
+-   Crowdfunding (wei.fund)
+-   Governance (boardroom.to)
+-   Supply Chain ​Traceability (provenance.org)
+-   Online Reputation & Digital Identity (uPort)
+-   Micropayment channels and Hub-and-Spoke networks (Raiden)
 
-[Start](https://medium.com/@ConsenSys/a-101-noob-intro-to-programming-smart-contracts-on-ethereum-695d15c1dab4)  building your dApps,  [write](https://chriseth.github.io/browser-solidity/)  your smart contracts,  [try](http://btcrelay.org/)  BTC Relay, and implement your peg of Bitcoin today!
+Start building your dApps, write your smart contracts, try BTC Relay, and implement your peg of Bitcoin today!
 * * *
 _Co-authored with Simon de la Rouviere. Graphics by Bogdan Burcea and Eva Shon._
