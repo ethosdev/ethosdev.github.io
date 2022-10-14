@@ -58,7 +58,7 @@ This is an overview of what’s possible now.
 
 ## Currency & Crypto abstraction (requires Bitcoin & Ethereum upgrades)
 
-Ethereum, in an attempt to further modularize and generalize the protocol, plans to implement an abstraction of the cryptography and tokens required in the chain. In this future, ETH deposits will be required to sign new blocks and collect transaction fees, but all other operations can be done by any other token if users so wish. Miners/stakers can accept fees in any Ethereum-based token. In this future, BTC itself, as a BTC-token-on-Ethereum, can also then be used to pay for transactions (alongside Ether and even  TysonCoins).
+Ethereum, in an attempt to further modularize and generalize the protocol, [plans to implement an abstraction](https://github.com/ethereum/EIPs/issues/28) of the cryptography and tokens required in the chain. In this future, ETH deposits will be required to sign new blocks and collect transaction fees, but all other operations can be done by any other token if users so wish. Miners/stakers can accept fees in any Ethereum-based token. In this future, BTC itself, as a BTC-token-on-Ethereum, can also then be used to pay for transactions (alongside Ether and even  TysonCoins).
 
 ## Conclusion
 
