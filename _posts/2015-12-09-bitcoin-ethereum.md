@@ -20,9 +20,7 @@ Later, the user decides they are finished with E-BTC and wants the BTC back. The
 
 The locking and unlocking of BTC is a simple way to explain a 2-way peg. The PegContract contract can be written today and can do everything it needs to trustlessly: it can verify that Bitcoins were sent to an address that locks them up; it can issue E-BTC; and it can destroy E-BTC and provide a proof of the destruction. But the mechanisms for verifying the proof and unlocking (and possibly locking) on the Bitcoin blockchain, need new opcodes to be added to Bitcoin.
 
-![](https://miro.medium.com/max/700/1*ASq7xmkCZIFd6Od1mQAtUw.png)
-
-New Bitcoin opcodes are needed to verify the proof from PegContract. (No opcodes are needed in Ethereum to verify the proof from Bitcoin)
+{% include fig.html img="Bitcoin-Ethereum-2way-peg.png" alt="2-way peg of Bitcoin and Ethereum" caption="New Bitcoin opcodes are needed to verify the proof from PegContract. (No opcodes are needed in Ethereum to verify the proof from Bitcoin)" %}
 
 Currently, Bitcoin can’t verify information from other chains.
 
@@ -42,9 +40,7 @@ The Ethereum Virtual Machine (EVM) was designed to be able to write Ethereum sma
 
 Currently, BTC Relay allows a smart contract to automatically dispense ETH once the relay has verified that BTC were sent to a specific address. This provides a trustless way for a user that has BTC, to obtain ETH. Alternatively, using the same ETH-BTC swap mechanism, if a user wants BTC, they can deposit ETH into the contract which monitors whether a certain Bitcoin address receives sufficient funds. When an ETH purchaser sends BTC, the relay then verifies this Bitcoin transaction, upon which the ETH is then transferred. If the transaction does not occur in Bitcoin by a certain point in time, then the original owner of the ETH can send BTC to themselves to withdraw their ETH from the contract.
 
-![](https://miro.medium.com/max/700/1*C0xpJwhp6us-m8wklVUd5Q.png)
-
-After a Seller has offered their ETH by sending it to a smart contract, a Buyer can buy the ETH using BTC
+{% include fig.html img="BTCRelay-swap.png" alt="Swapping BTC and ETH with BTC Relay" caption="After a Seller has offered their ETH by sending it to a smart contract, a Buyer can buy the ETH using BTC" %}
 
 Currently Litecoin is being used to move “bitcoin” between exchange platforms faster than the Bitcoin system can currently move it on average. Traders buy LTC with BTC, transfer to another exchange, then convert LTC back to BTC. One application of the ETH-BTC swap mechanism enabled by BTC Relay is even faster movement of BTC between exchanges. This will of course require BTC and ETH to be traded on the same exchange and will also depend on the trustless exchange attracting sufficient users to create acceptable liquidity.
 
@@ -58,7 +54,7 @@ A user’s BTC will be locked in a Bitcoin multisig address, where each signer m
 
 This is an overview of what’s possible now.
 
-![](https://miro.medium.com/max/700/1*2yZDbi-aGbu-8gQBuie4tg.png)
+{% include fig.html img="Trustless-Bonded-Peg.png" alt="Trustless bonded peg of Bitcoin and Ethereum" %}
 
 **3) Currency & Crypto abstraction (requires Bitcoin & Ethereum upgrades)**
 
