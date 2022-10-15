@@ -12,7 +12,7 @@ The core of what makes this possible is effectively a World Computer. Technicall
 
 Gas is the metering unit for use of the World Computer. As an analogy, electricity is metered by kilowatt hours. Using more computation and storage in Ethereum means that more gas is used. One fundamental reason for metering is that it provides an incentive for people (miners) to operate the World Computer. These miners get a fee for processing transactions, which is determined by the metering scheme: gas.
 
-Each operation in the EVM consumes gas. For example, a multiplication (MUL) consumes 5 gas and an addition (ADD) consumes 3 gas.  [Here is a spreadsheet of Ethereum’s operations and their gas consumption](https://docs.google.com/spreadsheets/d/1m89CVujrQe5LAFJ8-YAUCcNK950dUzMQPMJBxRtGCqs/edit).
+Each operation in the EVM consumes gas. For example, a multiplication (MUL) consumes 5 gas and an addition (ADD) consumes 3 gas.  [Here is a spreadsheet of Ethereum’s operations and their gas consumption](https://docs.google.com/spreadsheets/d/1m89CVujrQe5LAFJ8-YAUCcNK950dUzMQPMJBxRtGCqs/edit){:rel="nofollow"}.
 
 > Consider gas to be synonymous with fuel
 
@@ -110,4 +110,4 @@ For example, in a private chain each account could have X gas per day, or each a
 
 ## **Conclusion**
 
-Gas is metering and fuel for using the World Computer and is different from the Ether fee that is charged for using the World Computer. There is a difference between providing enough fuel and providing enough fee. Running Out of Gas costs money and it is safer to offer more gas, since all unused gas is refunded. Gas is a core part of Ethereum and the majority of its topics have been discussed. There’s more to it, including estimating gas, [intrinsic gas](https://github.com/ethereum/pyethereum/blob/3841e9a406f4ca9452afa45035fb07b5ce6314d9/ethereum/transactions.py#L177), [effects on transaction size](http://ethereum.stackexchange.com/questions/1106/is-there-a-limit-for-transaction-size), and further exploration and understanding can be built on the foundations provided by this article.
+Gas is metering and fuel for using the World Computer and is different from the Ether fee that is charged for using the World Computer. There is a difference between providing enough fuel and providing enough fee. Running Out of Gas costs money and it is safer to offer more gas, since all unused gas is refunded. Gas is a core part of Ethereum and the majority of its topics have been discussed. There’s more to it, including [estimating gas](https://web3js.readthedocs.io/en/v1.8.0/web3-eth.html#estimategas){:rel="nofollow"}, [intrinsic gas](https://github.com/ethereum/pyethereum/blob/3841e9a406f4ca9452afa45035fb07b5ce6314d9/ethereum/transactions.py#L177){:rel="nofollow"}, [effects on transaction size](http://ethereum.stackexchange.com/questions/1106/is-there-a-limit-for-transaction-size), and further exploration and understanding can be built on the foundations provided by this article.
