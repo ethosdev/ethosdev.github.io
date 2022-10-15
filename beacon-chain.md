@@ -26,7 +26,7 @@ A slot is like the block time, but slots can be empty. The Beacon Chain genesis 
 
 ## **Validators and Attestations**
 
-While Proof of Work (PoW) is associated with miners, Ethereum's validators are Proof of Stake "virtual miners". Validators run Ethereum's consensus. Their incentives are discussed later in [Staking Rewards and Penalties](#rewards-penalties).
+While Proof of Work (PoW) is associated with miners, Ethereum's validators are Proof of Stake "virtual miners". Validators run Ethereum's consensus. Their incentives are discussed later in [Staking Rewards and Penalties](#staking-rewards-and-penalties).
 
 A block **proposer** is a validator that has been pseudorandomly selected to build a block.
 
@@ -40,7 +40,7 @@ An **attestation** is a validator's vote, weighted by the validator's balance. �
 
 Validators also police each other and are rewarded for reporting other validators that make conflicting votes, or propose multiple blocks.
 
-The contents of the Beacon Chain is primarily a registry of validator addresses, the state of each validator, and attestations.  Validators are activated by the Beacon Chain and can transition to states, briefly described later in [Beacon Chain Validator Activation and Lifecycle](#validator-lifecycle).
+The contents of the Beacon Chain is primarily a registry of validator addresses, the state of each validator, and attestations.  Validators are activated by the Beacon Chain and can transition to states, briefly described later in [Beacon Chain Validator Activation and Lifecycle](#beacon-chain-validator-activation-and-lifecycle).
 
 ### Staking validators: semantics
 
