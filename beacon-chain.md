@@ -52,7 +52,7 @@ Validators are executed by _**validator clients**_ that make use of a beacon (ch
 
 ## **Committees**
 
-A committee is a group of validators.  For security, each slot has committees of at least 128 validators.  An attacker has less than a [one in a trillion](https://medium.com/@chihchengliang/minimum-committee-size-explained-67047111fa20) probability of controlling ⅔ of a committee.
+A committee is a group of validators.  For security, each slot has committees of at least 128 validators.  An attacker has less than a [one in a trillion](https://medium.com/@chihchengliang/minimum-committee-size-explained-67047111fa20){:rel="nofollow"} probability of controlling ⅔ of a committee.
 
 The concept of a randomness beacon that emits random numbers for the public, lends its name to the Ethereum Beacon Chain. The Beacon Chain enforces consensus on a pseudorandom process called RANDAO.
 
@@ -180,7 +180,7 @@ Validators can also "voluntary exit" after serving for 2,048 epochs, around 9 da
 
 In any voluntary or forced exit, there is a delay of four epochs before stakers can withdraw their stake.  Within the four epochs, a validator can still be caught and slashed. An honest validator's balance is withdrawable in around 27 hours.  But a slashed validator incurs a delay of 8,192 epochs (approximately 36 days).  
 
-Further technical details are described in [A note on Ethereum 2.0 phase 0 validator lifecycle](https://notes.ethereum.org/7CFxjwMgQSWOHIxLgJP2Bw#A-note-on-Ethereum-20-phase-0-validator-lifecycle) including this flowchart:
+Further technical details are described in [A note on Ethereum 2.0 phase 0 validator lifecycle](https://notes.ethereum.org/7CFxjwMgQSWOHIxLgJP2Bw#A-note-on-Ethereum-20-phase-0-validator-lifecycle){:rel="nofollow"} including this flowchart:
 
 {% include fig.html img="Beacon-Chain-Validator-Lifecycle.png" alt="Beacon Chain Validator Lifecycle" %}
 
@@ -199,7 +199,7 @@ Optimal behavior rewards validators the most.
 
 The Beacon Chain genesis was on December 1 2020 with 21,063 validators. The number of validators can decrease with slashings or voluntary exits, or stakers can activate more. Approaching 2 years, there are over 400,000 validators.
 
-The world's never had a scalable platform for _decentralized_ systems and applications before.  If you're inspired to dive deeper, authoritative references are in [Ethereum Proof-of-Stake Consensus Specifications](https://github.com/ethereum/consensus-specs).  It includes the Beacon Chain spec, links to other key resources, and issues with bounties. Contribute or refer others to [challenges](https://notes.ethereum.org/@protolambda/ryNEqN0mL), ethresear.ch or the Ethereum Magician's forum, and be a part of making history!
+The world's never had a scalable platform for _decentralized_ systems and applications before.  If you're inspired to dive deeper, authoritative references are in [Ethereum Proof-of-Stake Consensus Specifications](https://github.com/ethereum/consensus-specs).  It includes the Beacon Chain spec, links to other key resources, and issues with bounties. Contribute or refer others to [challenges](https://notes.ethereum.org/@protolambda/ryNEqN0mL){:rel="nofollow"}, ethresear.ch or the Ethereum Magician's forum, and be a part of making history!
 
 <p style="text-align: right"><a href="https://twitter.com/josephch">Follow @josephch</a></p>
 
@@ -209,8 +209,8 @@ _Thank you to Danny Ryan for review and feedback on several sections, Momo Araki
 
 * * *
 
-_Updates 2022-10-01: Removed sharding, crosslinks, and old terms like eth2. Improve opening and conclusion. See [archive.org](https://web.archive.org/web/20220000000000*/ethos.dev/beacon-chain) for prior versions._
+_Updates 2022-10-01: Removed sharding, crosslinks, and old terms like eth2. Improve opening and conclusion. See [archive.org](https://web.archive.org/web/20220000000000*/ethos.dev/beacon-chain){:rel="nofollow"} for prior versions._
 
 _2020-05-23: Staking Rewards and Penalties are clarified further and per_ v0.12 _of the Beacon Chain spec, optimal validators are not drained by the inactivity leak._
 
-_2020-04-27: Fix explanation of double vote. Thank you Aditya Asgaonkar for reporting, review, and check out his posts like_ [_Casper FFG Explainer_](https://www.adiasg.me/2020/03/31/casper-ffg-explainer.html)_._
+_2020-04-27: Fix explanation of double vote. Thank you Aditya Asgaonkar for reporting, review, and check out his posts like_ [_Casper FFG Explainer_](https://www.adiasg.me/2020/03/31/casper-ffg-explainer.html){:rel="nofollow"}_._
