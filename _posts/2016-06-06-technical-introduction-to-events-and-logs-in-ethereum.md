@@ -139,7 +139,7 @@ This means that a frontend can efficiently just watch for token transfers that a
 
 -   sent by an address `tokenContract.Transfer({_from: senderAddress})`
 -   or received by an address `tokenContract.Transfer({_to: receiverAddress})`
--   or sent by an address to a specific address  
+-   or sent by an address to a specific address
     `tokenContract.Transfer({_from: senderAddress, _to: receiverAddress})`
 
 ## Conclusion
@@ -154,6 +154,6 @@ _Thanks to Aaron Davis, Vincent Gariepy, and Joseph Lubin for feedback on this a
 [^2]: [https://github.com/ethereum/yellowpaper](https://github.com/ethereum/yellowpaper)
 [^3]: There are gas costs of 375 for a LOG operation, and 375 gas per topic, but when many bytes are being stored, these costs represent an insignificant fraction of the total cost of the storage.
 [^4]: Merkle proofs for logs are possible, so if an external entity supplies a contract with such a proof, a contract can verify that the log actually exists inside the blockchain.
-[^5]: [https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethfilter](https://github.com/web3/web3.js/blob/0.20.7/DOCUMENTATION.md#web3ethfilter)
+[^5]: [https://github.com/web3/web3.js/blob/0.20.7/DOCUMENTATION.md#web3ethfilter](https://github.com/web3/web3.js/blob/0.20.7/DOCUMENTATION.md#web3ethfilter){:rel="nofollow"}
 [^6]: [http://ethereum.stackexchange.com/questions/1381/how-do-i-parse-the-transaction-receipt-log-with-web3-js](http://ethereum.stackexchange.com/questions/1381/how-do-i-parse-the-transaction-receipt-log-with-web3-js)
 
