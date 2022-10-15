@@ -34,7 +34,7 @@ Fortunately, there are ways of interacting with Bitcoin inside of Ethereum. From
 
 The Ethereum Virtual Machine (EVM) was designed to be able to write Ethereum smart contracts that *do* integrate with Bitcoin. One such contract is BTC Relay.
 
-[BTC Relay](http://btcrelay.org/)  implements Bitcoin SPV (simplified payment verification) to verify whether any Bitcoin transaction has been confirmed (sufficiently) on the Bitcoin blockchain. So any transactions in the Bitcoin system, from payments to the locking of BTC, can be verified by an Ethereum contract.
+[BTC Relay](http://btcrelay.org){:rel="nofollow"} implements Bitcoin SPV (simplified payment verification) to verify whether any Bitcoin transaction has been confirmed (sufficiently) on the Bitcoin blockchain. So any transactions in the Bitcoin system, from payments to the locking of BTC, can be verified by an Ethereum contract.
 
 ## Decentralized exchange of BTC & ETH (works currently)
 
@@ -76,4 +76,4 @@ Many of the examples listed in the Rootstock whitepaper already exist (active de
 
 Start building your dApps, write your smart contracts, try BTC Relay, and implement your peg of Bitcoin today!
 * * *
-_Co-authored with Simon de la Rouviere. Graphics by Bogdan Burcea and Eva Shon._
+_Co-authored with Simon de la Rouviere. Original title "Taking Stock: Bitcoin and Ethereum". Graphics by Bogdan Burcea and Eva Shon._
