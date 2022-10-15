@@ -27,7 +27,7 @@ Fourth,  **ecosystem synergies**  can emerge. Since Bob has audited a contract w
 1.  Alice deploys her wallet contract and gets the address 0x851b7f3ab81bd8df354f0d7640efcd7288553419.
 2.  Alice uploads and verifies her source code on etherscan.
 3.  Bob gets the source code at https://etherscan.io/address/0x851b7f3ab81bd8df354f0d7640efcd7288553419#code
-4.  Bob runs  [verifier](https://www.npmjs.com/package/eth-bytecode-verifier)  to ensure that the source code compiled bytecode matches the bytecode on the blockchain.
+4.  Bob runs  [verifier](https://www.npmjs.com/package/eth-bytecode-verifier){:rel="nofollow"} to ensure that the source code compiled bytecode matches the bytecode on the blockchain.
 5.  Bob audits the source code (splitting it into smaller pieces if it helps him).
 6.  Alice makes required fixes and repeats the process (typically only one more loop). The process can end immediately here if it's deemed that there are no showstoppers that need to be fixed.
 
@@ -35,7 +35,7 @@ Fourth,  **ecosystem synergies**  can emerge. Since Bob has audited a contract w
 
 Perhaps people have been trusting contract source code on Etherscan too much. Alex Luoyuan has built a tool to help verify that the deployed bytecode at a given address matches the compiled output from source code:
 
-[https://www.npmjs.com/package/eth-bytecode-verifier](https://www.npmjs.com/package/eth-bytecode-verifier)
+[https://www.npmjs.com/package/eth-bytecode-verifier](https://www.npmjs.com/package/eth-bytecode-verifier){:rel="nofollow"}
 
 Source code verification is only available on Etherscan for now, but stay tuned for further developments.
 
