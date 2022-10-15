@@ -6,7 +6,7 @@ permalink: introducing-consensys-diligence
 
 _ConsenSys Diligence is raising the bar for security best practices in the Ethereum ecosystem._
 
-The Ethereum blockchain is skyrocketing in popularity. Last month, Fred Wilson of Union Square Ventures  [predicted](https://www.youtube.com/watch?v=2wyC9AEUoYI)  that the market cap of Ethereum will surpass Bitcoin’s in 2017, and The New York Times’ Dealbook  [seems to agree with him](https://www.nytimes.com/2017/06/19/business/dealbook/ethereum-bitcoin-digital-currency.html). In addition to increasing awareness of the  [Enterprise Ethereum Alliance](https://entethalliance.org/)  and capabilities of smart contracts on the Ethereum platform,  token launches are attracting higher and higher amounts of money. Developers want to capitalize on this movement by getting their tokens out as quickly as possible, and they feel immense pressure to quickly write and deploy contracts.
+The Ethereum blockchain is skyrocketing in popularity. Last month, Fred Wilson of Union Square Ventures [predicted](https://www.youtube.com/watch?v=2wyC9AEUoYI){:rel="nofollow"} that the market cap of Ethereum will surpass Bitcoin’s in 2017, and The New York Times’ Dealbook  [seems to agree with him](https://www.nytimes.com/2017/06/19/business/dealbook/ethereum-bitcoin-digital-currency.html). In addition to increasing awareness of the  [Enterprise Ethereum Alliance](https://entethalliance.org/) and capabilities of smart contracts on the Ethereum platform, token launches are attracting higher and higher amounts of money. Developers want to capitalize on this movement by getting their tokens out as quickly as possible, and they feel immense pressure to quickly write and deploy contracts.
   
 The paradoxical outcome is that **the stakes are higher, but people are becoming less cautious.**
   
@@ -24,7 +24,7 @@ This approach is informed by our experience working with clients like Gnosis, We
   
 In the future, we plan to expand these services to include assessment of legal structures and business cases. We’ll look beyond the white paper, into the fundamentals of the business plan, team, and code behind a project.
   
-As a part of ConsenSys,  **our incentives are aligned with the long-term health of the ecosystem rather than short-term revenue.** The ecosystem will always be our priority — over potential clients, business practices, and revenues. When there is a conflict between what a client desires and what’s good for the ecosystem, we side with the ecosystem. When we discover code or actions that are not improving the ecosystem and community, our priority is to inform the community about them.
+As a part of ConsenSys, **our incentives are aligned with the long-term health of the ecosystem rather than short-term revenue.** The ecosystem will always be our priority — over potential clients, business practices, and revenues. When there is a conflict between what a client desires and what’s good for the ecosystem, we side with the ecosystem. When we discover code or actions that are not improving the ecosystem and community, our priority is to inform the community about them.
 
 ## Want to work with us?
 
@@ -37,6 +37,6 @@ Were looking to work with clients who:
 -   Have a project with potential to make a significant impact on the ecosystem
 -   Have a history of contributions to the community
 
-If this sounds like you, please feel free to reach out to us at  [diligence@consensys.net](mailto:diligence@consensys.net).
+If this sounds like you, please feel free to reach out to us at [diligence@consensys.net](mailto:diligence@consensys.net).
 * * *
 _This was co-authored with Maurelian and Gonçalo Sá, originally posted on the ConsenSys blog._
