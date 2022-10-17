@@ -4,8 +4,6 @@ description: "Distributed Validator Technology (DVT) would require multiple sign
 permalink: dvt-staking
 ---
 
-TODO links
-
 I dream of a market where mainstream users can stake ETH easily and with no fees. There's also a dream that staking ETH will be as easy as plugging in an Internet router. Until then, we can't escape reality that staking with an exchange or pool is easiest for mainstream users.
 
 I dream that staking will be free. Currently, most staking companies and pools charge fees starting at 10%! There's hope from history. When buying stocks, for decades brokerages charged commission fees. Three years ago, in the USA the [fees were eliminated!](https://www.cnn.com/2019/10/01/investing/charles-schwab-eliminates-commissions)
@@ -24,7 +22,7 @@ Free staking increases risk of an attack on the network, especially if there's o
 
 You need to know this risk of free staking services. But there's also good news that the Ethereum protocol has been designed with fundamentals to eliminate risk from a single entity.
 
-## **Dreaming of Distributed Validator Technology (DVT)**
+## **Distributed Validator Technology (DVT) to the rescue**
 
 Distributed Validator Technology (DVT) would require multiple signatures to command a validator, allowing a secure and easy way for mainstream users to stake on Ethereum.
 
@@ -36,7 +34,7 @@ For example, you could split your validator private key into three shares and gi
 
 Distributed Validator Technology is critical.  There should be easy tools for you to split your validator private key into shares that you can provide to staking companies.  There needs to be methods for operating Distributed Validators so that staking operations of different companies can be combined.
 
-Some may tell you that you should run your own validators.  That's fine if you're comfortable and enjoy the work.  But it's not the mainstream solution yet.  Even if you run your own validators, you can still benefit from DVT.  They allow you to spread validators across several machines and even different data centers.  This increases security and avoids single points of failure.
+Some will tell you that you should run your own validators.  That's fine if you're comfortable and enjoy the work.  But it's not the mainstream solution yet.  Even if you run your own validators, you can still benefit from DVT.  They allow you to spread validators across several machines and even different data centers.  This increases security and avoids single points of failure.
 
 I dream that market forces and customer demand will push the staking industry to be interoperable with each other using Distributed Validator Technology.  We will also need to educate mainstream stakers to use multiple companies configured with DVT, so that they do not grant a single company full control of their validators.  Let's all make it happen!
 
