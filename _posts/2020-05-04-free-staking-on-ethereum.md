@@ -1,7 +1,7 @@
 ---
 title: "Free staking on Ethereum 2.0 and Secret Shared Validators"
-date: "2020-05-04"
-permalink: /:title/
+description: "Free staking on Ethereum 2.0 could be inevitable. Secret Shared Validators, like multisig for validators, are needed to help maintain network security."
+permalink: free-staking
 ---
 
 Did you know that one of the largest exchanges already provides free staking?
@@ -16,13 +16,13 @@ But first, by reporting some facts it can be perceived that there's businesses t
 
 The market for Ethereum 2.0 staking services is building up.  You need to know the possibilities.  You can prod the market.  If you plan on staking, you should express what you'd like.  Collectively, at this early stage, stakers can meaningfully lead and shape the market.
 
-As [reported last month](https://www.theblockcrypto.com/linked/60916/coinbase-custody-is-the-biggest-tezos-staking-service-despite-charging-higher-fees):
+As [reported last month](https://www.theblockcrypto.com/linked/60916/coinbase-custody-is-the-biggest-tezos-staking-service-despite-charging-higher-fees){:rel="nofollow"}:
 
 > "Coinbase charges the highest fee –25% – for XTZ staking, while Kraken charges 7.25% and Binance currently charges no fee."
 
 You may have thought that free staking is too cheap.  Don't, because it's already possible and sustainable by some.  Binance's business model includes free staking, a bit like how Internet business models give you a free email account. 
 
-What's unclear is when Binance will offer staking on the [Ethereum 2.0 Beacon Chain](https://ethos.dev/beacon-chain/).  If you're a Binance customer, it's worth prodding them for Ethereum staking with Secret Shared Validators.  Otherwise it could be months where you may have to suffer 25% staking fees.
+What's unclear is when Binance will offer staking on the [Ethereum 2.0 Beacon Chain](https://ethos.dev/beacon-chain).  If you're a Binance customer, it's worth prodding them for Ethereum staking with Secret Shared Validators.  Otherwise it could be months where you may have to suffer 25% staking fees.
 
 Free staking is good for you but will have its critics.  This post will not debate much because the two remaining secrets are even more important.
 
@@ -36,7 +36,7 @@ Free staking is good for you.  You should demand free staking from the provider
 
 ## **Secret #2: Staking companies with the most validators can attack the network**
 
-[Coinbase explains](http://web.archive.org/web/20200328023024/https://help.coinbase.com/en/coinbase/trading-and-funding/other/staking-on-coinbase.html): "You retain full ownership of your crypto, but you’re delegating your staking power to Coinbase." It hints at the power that staking services amass, but does not educate the risks of that power.
+[Coinbase explains](http://web.archive.org/web/20200328023024/https://help.coinbase.com/en/coinbase/trading-and-funding/other/staking-on-coinbase.html){:rel="nofollow"}: "You retain full ownership of your crypto, but you’re delegating your staking power to Coinbase." It hints at the power that staking services amass, but does not educate the risks of that power.
 
 Ownership and custody is relatively simple in Ethereum 2.0 staking, because there are two staking keys.  One is a validator "hot" key, and one is a withdrawal "cold" key.  Basically, whoever has the withdrawal key, owns the funds.  You can give the validator key to a staking company, and keep the withdrawal key to yourself: a company cannot steal your stake (though they can lose the stake).
 
@@ -52,7 +52,7 @@ The #1 secret is little known in the market, but should also be among the priori
 
 A Secret Shared Validator is like multisig for a validator.  Instead of a validator being controlled by a single signature, multiple signatures would be required to command a validator.  This means that you don't have to delegate your staking power to a single company.  You should demand a standard for Secret Shared Validators, and demand that staking companies comply with the standard.
 
-Unlike current Proof of Stake blockchains, [Ethereum 2.0 is designed to enable Secret Shared Validators](https://www.youtube.com/watch?v=Jtz9b7yWbLo).  The Beacon Chain uses BLS signatures.  Since BLS signatures are additive, Shamir's Secret Sharing can be used to split the validator private key into multiple shares.  From the individual  share signatures, the full BLS signature can be computed.  You can configure how many shares to split your validator private key, and how many share signatures are needed for the full BLS signature.
+Unlike current Proof of Stake blockchains, [Ethereum 2.0 is designed to enable Secret Shared Validators](https://www.youtube.com/watch?v=Jtz9b7yWbLo){:rel="nofollow"}.  The Beacon Chain uses BLS signatures.  Since BLS signatures are additive, Shamir's Secret Sharing can be used to split the validator private key into multiple shares.  From the individual  share signatures, the full BLS signature can be computed.  You can configure how many shares to split your validator private key, and how many share signatures are needed for the full BLS signature.
 
 For example, if Prysmatic Labs and Sigma Prime (or others) have free staking for (retail) members of the community, then you could split your validator private key into three shares and give each a share.  You give the third share to Binance.  The setup could be 2-of-3, so that a single signature is unable to command your validator.  Two of the companies would have to sign the same message to command your validator. A company would not have unilateral power to command all the validators of their customer base.
 
@@ -81,7 +81,7 @@ Is it a good dream to have Binance and a couple of others provide free staking w
 5. for retail customers, **multiple companies offer free staking with Secret Shared Validators**
 6. you sign up with two or more such companies and **enjoy free staking more securely**
 
-The first four items are needed so that Secret Shared Validators can be tested on testnets and released on Mainnet.  For the fifth item, you can prod exchanges and [prod Binance to **use Secret Shared Validators** and enter the Ethereum staking market sooner](https://twitter.com/cz_binance).
+The first four items are needed so that Secret Shared Validators can be tested on testnets and released on Mainnet.  For the fifth item, you can prod exchanges and [prod Binance to **use Secret Shared Validators** and enter the Ethereum staking market sooner](https://twitter.com/cz_binance){:rel="nofollow"}.
 
 ## **Secrets for you to spread**
 
