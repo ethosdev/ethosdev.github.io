@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "The Beacon Chain Ethereum 2.0 explainer you need to read first"
-description: Ethereum's Beacon Chain and Proof of Stake from validators to finality. Illustrated with examples at the right level to make you proficient and save time.
+description: Ethereum's Beacon Chain and Proof-of-Stake from validators to finality. Illustrated with examples at the right level to make you proficient and save time.
 permalink: beacon-chain
 
 ---
 
-The engine was changed mid-flight! September 15 2022 — the day Ethereum switched to Proof of Stake.
+The engine was changed mid-flight! September 15 2022 — the day Ethereum switched to Proof-of-Stake.
 
 That new engine is the Beacon Chain.
 
@@ -26,7 +26,7 @@ A slot is like the block time, but slots can be empty. The Beacon Chain genesis 
 
 ## **Validators and Attestations**
 
-While Proof of Work (PoW) is associated with miners, Ethereum's validators are Proof of Stake "virtual miners". Validators run Ethereum's consensus. Their incentives are discussed later in [Staking Rewards and Penalties](#staking-rewards-and-penalties).
+While proof-of-work is associated with miners, Ethereum's validators are proof-of-stake "virtual miners". Validators run Ethereum's consensus. Their incentives are discussed later in [Staking Rewards and Penalties](#staking-rewards-and-penalties).
 
 A block **proposer** is a validator that has been pseudorandomly selected to build a block.
 
