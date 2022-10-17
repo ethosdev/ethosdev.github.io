@@ -20,7 +20,7 @@ Ownership and custody is relatively simple in Ethereum staking, because there ar
 
 By giving your validator key to a company, you give them full power to control your validator.  This is the delegated staking power quoted above.  When many people give their validator keys to a company, that company can control enough validators to be a threat to the Ethereum network.  The company could knowingly or unknowingly command validators to attack the network.
 
-Free staking increases risk of an attack on the network, especially if there's only one free staking service and it captures most of the stakers.  Existing Proof of Stake blockchains have no protocol defence against this.
+Free staking increases risk of an attack on the network, especially if there's only one free staking service and it captures most of the stakers.  Existing proof-of-stake blockchains have no protocol defence against this.
 
 You need to know this risk of free staking services. But there's also good news that the Ethereum protocol has been designed with fundamentals to eliminate risk from a single entity.
 
@@ -30,7 +30,7 @@ Distributed Validator Technology (DVT) would require multiple signatures to comm
 
 DVT is like multisig for a validator.  Instead of a validator being controlled by a single signature, multiple signatures would be needed.  This means that you don't have to delegate your staking power to a single company.  I dream that staking companies and pools will interoperate with each other with [Distributed Validator Technology](https://github.com/ethereum/distributed-validator-specs).
 
-Unlike other Proof of Stake blockchains, [DVT is possible in Ethereum](https://www.youtube.com/watch?v=Jtz9b7yWbLo){:rel="nofollow"}.  The Beacon Chain uses BLS signatures.  Since BLS signatures are additive, Shamir's Secret Sharing can be used to split the validator private key into multiple shares.  From the individual share signatures, the full BLS signature can be computed.  You can configure how many shares to split your validator private key, and how many share signatures are needed for the full BLS signature. This type of Distributed Validator Technology has also been called Secret Shared Validators (SSV).
+Unlike other proof-of-stake blockchains, [DVT is possible in Ethereum](https://www.youtube.com/watch?v=Jtz9b7yWbLo){:rel="nofollow"}.  The Beacon Chain uses BLS signatures.  Since BLS signatures are additive, Shamir's Secret Sharing can be used to split the validator private key into multiple shares.  From the individual share signatures, the full BLS signature can be computed.  You can configure how many shares to split your validator private key, and how many share signatures are needed for the full BLS signature. This type of Distributed Validator Technology has also been called Secret Shared Validators (SSV).
 
 For example, you could split your validator private key into three shares and give three companies, one share each.  The setup could be 2-of-3, so that a single signature is unable to command your validator.  Two of the companies would have to sign the same message to command your validator. A company would not have unilateral power to command all the validators of their customer base.
 
