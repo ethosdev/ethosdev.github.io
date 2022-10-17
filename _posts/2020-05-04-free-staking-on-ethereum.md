@@ -32,11 +32,9 @@ Unlike other Proof of Stake blockchains, [DVT is possible in Ethereum](https://w
 
 For example, you could split your validator private key into three shares and give three companies, one share each.  The setup could be 2-of-3, so that a single signature is unable to command your validator.  Two of the companies would have to sign the same message to command your validator. A company would not have unilateral power to command all the validators of their customer base.
 
-Some may tell you that you should run your own validators.  That's fine if you're comfortable and enjoy the work.  But it's not the mainstream solution yet.
+Distributed Validator Technology is critical.  There should be easy tools for you to split your validator private key into shares that you can provide to staking companies.  There needs to be methods for operating Distributed Validators so that staking operations of different companies can be combined.
 
-**Distributed Validator Technology is critical.** **There should be easy tools for you to split your validator private key into shares that you can provide to staking companies.  There needs to be methods for how to operate Distributed Validators so that staking operations of different companies can be combined.**
-
-Even if you run your own validators, you can still benefit from DVT.  They allow you to spread validators across several machines and even different data centers.  This increases security and avoids single points of failure.
+Some may tell you that you should run your own validators.  That's fine if you're comfortable and enjoy the work.  But it's not the mainstream solution yet.  Even if you run your own validators, you can still benefit from DVT.  They allow you to spread validators across several machines and even different data centers.  This increases security and avoids single points of failure.
 
 I dream that market forces and customer demand will push the staking industry to be interoperable with each other using Distributed Validator Technology.  We will also need to educate mainstream stakers to use multiple companies configured with DVT, so that they do not grant a single company full control of their validators.  Let's all make it happen!
 
