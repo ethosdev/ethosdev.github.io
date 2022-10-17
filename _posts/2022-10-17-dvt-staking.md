@@ -1,12 +1,12 @@
 ---
 title: "Mainstream staking with Distributed Validator Technology"
-description: "Distributed Validator Technology (DVT) would require multiple signatures to command a validator and could allow mainstream users to stake easily and securely."
+description: "Distributed Validator Technology (DVT) would require multiple signatures to command a validator, allowing a secure and easy way for mainstream users to stake on Ethereum."
 permalink: dvt-staking
 ---
 
 TODO links
 
-I dream of a market where mainstream users can stake ETH easily and with no fees. There's also a dream that staking ETH will be as easy as plugging in an Internet router. Until then, we can't escape reality that staking with an exchange or pool will be the easiest option for mainstream users.
+I dream of a market where mainstream users can stake ETH easily and with no fees. There's also a dream that staking ETH will be as easy as plugging in an Internet router. Until then, we can't escape reality that staking with an exchange or pool is easiest for mainstream users.
 
 I dream that staking will be free. Currently, most staking companies and pools charge fees starting at 10%! There's hope from history. When buying stocks, for decades brokerages charged commission fees. Three years ago, in the USA the [fees were eliminated!](https://www.cnn.com/2019/10/01/investing/charles-schwab-eliminates-commissions)
 
@@ -26,7 +26,7 @@ You need to know this risk of free staking services. But there's also good news 
 
 ## **Dreaming of Distributed Validator Technology (DVT)**
 
-Distributed Validator Technology (DVT) would require multiple signatures to command a validator and could allow mainstream users to stake easily and securely.
+Distributed Validator Technology (DVT) would require multiple signatures to command a validator, allowing a secure and easy way for mainstream users to stake on Ethereum.
 
 DVT is like multisig for a validator.  Instead of a validator being controlled by a single signature, multiple signatures would be needed.  This means that you don't have to delegate your staking power to a single company.  I dream that staking companies and pools will interoperate with each other with [Distributed Validator Technology](https://github.com/ethereum/distributed-validator-specs).
 
