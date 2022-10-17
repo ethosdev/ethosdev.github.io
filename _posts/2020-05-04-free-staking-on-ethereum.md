@@ -19,7 +19,7 @@ I dream that staking fees will become zero. Currently, most staking companies an
 
 Is there a catch to free staking?
 
-## Staking companies with the most validators can attack the network**
+## **Staking companies with the most validators can attack the network**
 
 [Coinbase explains](http://web.archive.org/web/20200328023024/https://help.coinbase.com/en/coinbase/trading-and-funding/other/staking-on-coinbase.html): "You retain full ownership of your crypto, but you’re delegating your staking power to Coinbase." It hints at the power that staking services amass, but does not educate the risks of that power.
 
@@ -41,31 +41,22 @@ For example, you could split your validator private key into three shares and gi
 
 Some may tell you that you should run your own validators.  That's fine if you're comfortable and enjoy the work.  But it's not the mainstream solution yet.
 
-> **Distributed Validator Technology is critical.** **There should be easy tools for you to split your validator private key into shares that you can provide to staking companies.  There needs to be a standard for how to operate Distributed Validators so that staking operations of different companies can be combined.**
+> **Distributed Validator Technology is critical.** **There should be easy tools for you to split your validator private key into shares that you can provide to staking companies.  There needs to be methods for how to operate Distributed Validators so that staking operations of different companies can be combined.**
 
 Even if you run your own validators, you can still benefit from DVT.  They allow you to spread validators across several machines and even different data centers.  This increases security and avoids single points of failure.
 
-There's a chance that Binance will not allow DVT.  Ideally, **you should demand that a company supports Distributed Validators before signing up for their free staking**.
 
-## **A dream or will it play out?**
 
-Is it a good dream to have Binance and a couple of others provide free staking with DVT?  Will Coinbase join?  We'll need to drive towards ensuring:
 
-1. **easy-to-use tools** (and UIs) that allow you to split your validator private key into multiple shares
-2. at least one **implementation** of a Distributed Validator client
-3. **adoption** of Distributed Validator protocol (so that staking operations of different companies can be combined)
-4. for retail customers, **multiple companies offer free staking with Distributed Validators**
-5. you sign up with two or more such companies and **enjoy free staking more securely**
+I dream that market forces and customer demand will push Distributed Validator Technology across the industry.  We will also need to educate mainstream stakers to use DVT, so that they do not grant a single company with full control of their validators. 
 
-## **Secrets for you to spread**
+
+
+
 
 You should know that free staking is viable (even maybe inevitable).  But, there's a risk to the Ethereum network if there's only one free staking company that everyone joins.  Distributed Validator Technology would prevent a company from unilateral control of their customers' validators.  Contact @dankrad on Twitter or email dankrad@ethereum.org if you'd like to work on this.
 
 Most important, you should demand staking companies prepare and adopt the [Ethereum Distributed Validator Specifications](https://github.com/ethereum/distributed-validator-specs).  Let's hope that you can enjoy free staking on Ethereum with DVT to maintain network security.  Let's all make it happen!
-
-* * *
-
-_Thank you to Dankrad Feist for reviewing a draft and feedback.  As always, reviewers don't imply agreement with my opinions._
 
 * * *
 
