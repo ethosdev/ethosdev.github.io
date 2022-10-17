@@ -1,6 +1,6 @@
 ---
-title: "Ethereum staking with Distributed Validator Technology"
-description:
+title: "Mainstream staking with Distributed Validator Technology"
+description: "Distributed Validator Technology (DVT) would require multiple signatures to command a validator and could allow mainstream users to stake easily and securely."
 permalink: dvt-staking
 ---
 
@@ -26,7 +26,9 @@ You need to know this risk of free staking services. But there's also good news 
 
 ## **Dreaming of Distributed Validator Technology (DVT)**
 
-Distributed Validator Technology (DVT) is like multisig for a validator.  Instead of a validator being controlled by a single signature, multiple signatures would be required to command a validator.  This means that you don't have to delegate your staking power to a single company.  I dream that staking companies and pools will interoperate with each other with [Distributed Validator Technology](https://github.com/ethereum/distributed-validator-specs).
+Distributed Validator Technology (DVT) would require multiple signatures to command a validator and could allow mainstream users to stake easily and securely.
+
+DVT is like multisig for a validator.  Instead of a validator being controlled by a single signature, multiple signatures would be needed.  This means that you don't have to delegate your staking power to a single company.  I dream that staking companies and pools will interoperate with each other with [Distributed Validator Technology](https://github.com/ethereum/distributed-validator-specs).
 
 Unlike other Proof of Stake blockchains, [DVT is possible in Ethereum](https://www.youtube.com/watch?v=Jtz9b7yWbLo){:rel="nofollow"}.  The Beacon Chain uses BLS signatures.  Since BLS signatures are additive, Shamir's Secret Sharing can be used to split the validator private key into multiple shares.  From the individual share signatures, the full BLS signature can be computed.  You can configure how many shares to split your validator private key, and how many share signatures are needed for the full BLS signature. This type of Distributed Validator Technology has also been called Secret Shared Validators (SSV).
 
