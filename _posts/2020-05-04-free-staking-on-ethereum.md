@@ -11,25 +11,15 @@ Here's three secrets you should know about Ethereum staking and what to do about
 You'll want to know about free staking, but more important is staking with Distributed Validator Technology (DVT) to help maintain network security.
 
 
-I dream of a market where the mainstream can stake ETH easily and with no fees. There's also a dream that staking ETH will be as easy as plugging in an Internet router. Until then, we can't escape reality that staking with an exchange will be the easiest option for the mainstream.
-
-I dream that staking fees will become zero. Currently, most staking companies and pools charge fees starting at 10%! There might be hope from history. When buying stocks, for decades brokerages charged commission fees. Three years ago, in the USA the [fees were eliminated](https://www.cnn.com/2019/10/01/investing/charles-schwab-eliminates-commissions).
-
-https://www.cnbc.com/2019/10/01/charles-schwab-is-eliminating-online-commissions-for-trading-in-us-stocks-and-etfs.html
-
 ## Dreaming of a market of free staking
 
-Most staking companies and pools charge fees starting at 10%! I dream of a market where the mainstream can stake ETH easily with no fees.
+I dream of a market where the mainstream can stake ETH easily and with no fees. There's also a dream that staking ETH will be as easy as plugging in an Internet router. Until then, we can't escape reality that staking with an exchange will be the easiest option for the mainstream.
 
-As [reported last month](https://www.theblockcrypto.com/linked/60916/coinbase-custody-is-the-biggest-tezos-staking-service-despite-charging-higher-fees):
+I dream that staking fees will become zero. Currently, most staking companies and pools charge fees starting at 10%! There might be hope from history. When buying stocks, for decades brokerages charged commission fees. Three years ago, in the USA the [fees were eliminated!](https://www.cnn.com/2019/10/01/investing/charles-schwab-eliminates-commissions)
 
-> "Coinbase charges the highest fee –25% – for XTZ staking, while Kraken charges 7.25% and Binance currently charges no fee."
+Is there a catch to free staking?
 
-You may have thought that free staking is too cheap.  Don't, because it's already possible and sustainable by some.  Binance's business model includes free staking, a bit like how Internet business models give you a free email account. 
-
-Free staking is good for you.  You should demand free staking from the providers charging a fee.  Now, is there a catch to free staking?  Only if secret #1 doesn't happen.  #1 is Distributed Validator Technology (DVT) and it also needs your voice.  But next, let's discuss the risk to free staking without DVT.
-
-## **Secret #2: Staking companies with the most validators can attack the network**
+## Staking companies with the most validators can attack the network**
 
 [Coinbase explains](http://web.archive.org/web/20200328023024/https://help.coinbase.com/en/coinbase/trading-and-funding/other/staking-on-coinbase.html): "You retain full ownership of your crypto, but you’re delegating your staking power to Coinbase." It hints at the power that staking services amass, but does not educate the risks of that power.
 
@@ -39,11 +29,9 @@ By giving your validator key to a company, you give them full power to control y
 
 Free staking increases risk of an attack on the network, especially if there's only one free staking service and it captures most of the stakers.  Existing Proof of Stake blockchains have no protocol defence against this.
 
-You need to know this dark side of free staking services, but also the good news that the Ethereum protocol has been designed with fundamentals to eliminate risk from a single entity.
+You need to know this risk of free staking services. But there's also good news that the Ethereum protocol has been designed with fundamentals to eliminate risk from a single entity.
 
-The #1 secret is that Distributed Validator Technology (DVT) allows you to stake with a company like Binance, without giving them full control of your validators.
-
-## **Secret #1: You should demand adoption of Distributed Validator Technology (DVT)**
+## **Dreaming of Distributed Validator Technology (DVT)**
 
 Distributed Validator Technology (DVT) is like multisig for a validator.  Instead of a validator being controlled by a single signature, multiple signatures would be required to command a validator.  This means that you don't have to delegate your staking power to a single company.  You should demand that staking companies prepare and adopt the [Ethereum Distributed Validator Specifications](https://github.com/ethereum/distributed-validator-specs).
 
