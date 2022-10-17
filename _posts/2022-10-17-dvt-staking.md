@@ -1,5 +1,5 @@
 ---
-title: "Mainstream staking with Distributed Validator Technology"
+title: "Easy and secure staking with Distributed Validator Technology"
 description: "Distributed Validator Technology (DVT) would require multiple signatures to command a validator, allowing a secure and easy way for mainstream users to stake on Ethereum."
 permalink: dvt-staking
 ---
@@ -10,7 +10,7 @@ I dream of a market where mainstream users can stake ETH easily and with no fees
 
 I dream that staking will be free. Currently, most staking companies and pools charge fees starting at 10%! There's hope from history. When buying stocks, for decades brokerages charged commission fees. Three years ago, in the USA the [fees were eliminated!](https://www.cnn.com/2019/10/01/investing/charles-schwab-eliminates-commissions)
 
-Is there a catch to free staking?
+Is there a catch to free and easy staking?
 
 ## **Staking companies with the most validators can attack the network**
 
