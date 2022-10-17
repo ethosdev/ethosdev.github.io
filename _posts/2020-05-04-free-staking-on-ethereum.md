@@ -1,5 +1,5 @@
 ---
-title: "Free staking on Ethereum and Distributed Validator Technology"
+title: "Dreaming of free staking with Distributed Validator Technology"
 date: "2020-05-04"
 permalink: /:title/
 ---
@@ -10,11 +10,16 @@ Here's three secrets you should know about Ethereum staking and what to do about
 
 You'll want to know about free staking, but more important is staking with Distributed Validator Technology (DVT) to help maintain network security.
 
-## **Secret #3: You should demand free staking**
 
-You need to know that free staking is possible.
+I dream of a market where the mainstream can stake ETH easily and with no fees. There's also a dream that staking ETH will be as easy as plugging in an Internet router. Until then, we can't escape reality that staking with an exchange will be the easiest option for the mainstream.
 
-Althought most staking companies pools charge fees starting at 10%, 
+I dream that staking fees will become zero. Currently, most staking companies and pools charge fees starting at 10%! There might be hope from history. When buying stocks, for decades brokerages charged commission fees. Three years ago, in the USA the [fees were eliminated](https://www.cnn.com/2019/10/01/investing/charles-schwab-eliminates-commissions).
+
+https://www.cnbc.com/2019/10/01/charles-schwab-is-eliminating-online-commissions-for-trading-in-us-stocks-and-etfs.html
+
+## Dreaming of a market of free staking
+
+Most staking companies and pools charge fees starting at 10%! I dream of a market where the mainstream can stake ETH easily with no fees.
 
 As [reported last month](https://www.theblockcrypto.com/linked/60916/coinbase-custody-is-the-biggest-tezos-staking-service-despite-charging-higher-fees):
 
