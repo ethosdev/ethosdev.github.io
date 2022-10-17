@@ -1,7 +1,7 @@
 ---
 title: "Dreaming of free staking with Distributed Validator Technology"
-date: "2020-05-04"
-permalink: /:title/
+description:
+permalink: staking-with-dvt
 ---
 
 TODO links
@@ -40,5 +40,5 @@ I dream that market forces and customer demand will push the staking industry to
 
 * * *
 
-_Update 2022-10-11: ... See [archive.org](https://web.archive.org/web/20220000000000*/https://ethos.dev/free-staking) for prior versions._
+_A 2020 version of this post in a different style and older SSV terminology is at [{% post_url 2020-05-04-free-staking-on-ethereum %}]({% post_url 2020-05-04-free-staking-on-ethereum %})_
 
