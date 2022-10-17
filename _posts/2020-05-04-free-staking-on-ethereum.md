@@ -46,7 +46,7 @@ Free staking increases risk of an attack on the network, especially if there's o
 
 You need to know this dark side of free staking services, but also the good news that the Ethereum 2.0 protocol has been designed with fundamentals to eliminate risk from a single entity.
 
-The #1 secret is little known in the market, but should also be among the priorities in the [Ethereum 2020 roadmap](https://ethos.dev/ethereum-2020-roadmap/) to keep the Ethereum 2.0 network more secure.
+The #1 secret is little known in the market, but should also be among the priorities in the Ethereum 2020 roadmap to keep the Ethereum 2.0 network more secure.
 
 ## **Secret #1: You should demand Secret Shared Validators**
 
