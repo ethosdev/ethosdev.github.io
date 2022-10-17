@@ -6,7 +6,7 @@ permalink: dvt-staking
 
 TODO links
 
-I dream of a market where the mainstream can stake ETH easily and with no fees. There's also a dream that staking ETH will be as easy as plugging in an Internet router. Until then, we can't escape reality that staking with an exchange or pool will be the easiest option for the mainstream.
+I dream of a market where mainstream users can stake ETH easily and with no fees. There's also a dream that staking ETH will be as easy as plugging in an Internet router. Until then, we can't escape reality that staking with an exchange or pool will be the easiest option for mainstream users.
 
 I dream that staking will be free. Currently, most staking companies and pools charge fees starting at 10%! There's hope from history. When buying stocks, for decades brokerages charged commission fees. Three years ago, in the USA the [fees were eliminated!](https://www.cnn.com/2019/10/01/investing/charles-schwab-eliminates-commissions)
 
