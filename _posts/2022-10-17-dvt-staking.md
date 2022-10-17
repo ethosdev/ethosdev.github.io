@@ -40,5 +40,5 @@ I dream that market forces and customer demand will push the staking industry to
 
 * * *
 
-_A 2020 version of this post in a different style and older SSV terminology is at [{% post_url 2020-05-04-free-staking-on-ethereum %}]({% post_url 2020-05-04-free-staking-on-ethereum %})_
+_A 2020 version of this post in a different style and older SSV terminology is at [{{ site.url }}{% post_url 2020-05-04-free-staking-on-ethereum %}]({{ site.url }}{% post_url 2020-05-04-free-staking-on-ethereum %})_
 
