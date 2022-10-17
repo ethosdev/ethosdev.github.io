@@ -1,7 +1,7 @@
 ---
-title: "Dreaming of free staking with Distributed Validator Technology"
+title: "Ethereum staking with Distributed Validator Technology"
 description:
-permalink: staking-with-dvt
+permalink: dvt-staking
 ---
 
 TODO links
