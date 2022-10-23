@@ -1,6 +1,6 @@
 ---
 title: "Ethereum's Shanghai Attacks"
-description:
+description: "The Shanghai Attacks in 2016 directly against the Ethereum protocol itself, led to Ethereum Improvement Proposals that fundamentally strengthened Ethereum to this day."
 permalink: shanghai-attacks
 ---
 
