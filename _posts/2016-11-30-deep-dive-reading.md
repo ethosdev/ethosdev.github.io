@@ -1,10 +1,10 @@
 ---
 title: "Very deep-dive on Ethereum Reading List (2016)"
-description:
+description: "A 2016 technical reading list for getting very deep in Ethereum and where discussions take place. Includes Ethereum Improvement Proposals (EIP) that strengthened the protocol against attacks."
 permalink: deep-dive-2016
 ---
 
-_A reading list for getting very deep on Ethereum in 2016._
+_A technical reading list for getting very deep in Ethereum in 2016, including Ethereum Improvement Proposals (EIP) that fundamentally strengthened the protocol against [attacks.]({{ site.url }}{% post_url 2016-11-30-shanghai-attacks %})_
 
 ### [LeastAuthority/ethereum-analyses](https://github.com/LeastAuthority/ethereum-analyses){:rel="nofollow"}
 
