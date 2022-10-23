@@ -1,8 +1,14 @@
+---
+title: "Designing Safer Smart Contracts"
+description:
+permalink: 
+---
+
 In a short time Ethereum has turned into the world’s second largest cryptocurrency, with a market cap of $1B and thousands of nodes around the world running its code. Developers and companies in a number of industries are exploring its potential to improve existing processes. Beyond metrics, Ethereum has pioneered the idea of easy to write smart contracts, where complex contract logic can be created on the blockchain without the need for centralized parties with a programming language similar to that used by non-blockchain developers.
 
 Still, as The DAO attack and subsequent hard fork show, challenges abound for those writing smart contracts at this nascent stage for Ethereum. While The DAO had a substantial number of technical issues and a flawed rollout process that have both been heavily debated, it’s  **impossible**  for any developer to write bug free code that is impervious to attack. This is exacerbated by developing on a new platform where real money is at risk. This problem is even more challenging because blockchain application code is held on an append-only ledger with advanced techniques, planning, and design required to change code. Given how easy Solidity is to write, developers with experience in other fields of software may feel a false sense of comfort.
 
-At ConSensys, where we have a number of decentralized projects underway like SingularDTV and  [Gnosis](http://gnosis.pm/), the challenges faced by The DAO underscore how important it is to ensure that all our projects meet the highest safety and security standards. After reaching out to a number of Ethereum community members, we assembled a document outlining  [Ethereum Contract Security Techniques and Tips](https://github.com/ConsenSys/smart-contract-best-practices)  that is now available for anyone to contribute to.
+At ConsenSys, where we have a number of decentralized projects underway like SingularDTV and  [Gnosis](http://gnosis.pm/), the challenges faced by The DAO underscore how important it is to ensure that all our projects meet the highest safety and security standards. After reaching out to a number of Ethereum community members, we assembled a document outlining  [Ethereum Contract Security Techniques and Tips](https://github.com/ConsenSys/smart-contract-best-practices)  that is now available for anyone to contribute to.
 
 We collected a number of anti-patterns and sample attacks, like The DAO’s  [re-entrancy](https://github.com/ConsenSys/smart-contract-best-practices#race-conditions)  bug, an example of a broader set of “race conditions”. For most attacks, we show code examples, outline the risks, and recommend potential solutions. Over time, we hope this will be a primary resource for those writing Solidity — and encourage you to add examples of good code or smart contract attacks you’ve seen.
 
@@ -17,3 +23,5 @@ The goal is for the  [best practices](https://github.com/ConsenSys/smart-contrac
 Over the course of the next few weeks and months, we will be going more in depth about some of the tips and philosophies outlined in the document.
 
 Despite the challenges, the work we all do at this stage is pioneering new approaches to decentralized systems and each of us can have substantial impact given how early it is for the ecosystem.
+* * *
+_Initially published on the [ConsenSys blog](https://media.consensys.net/designing-safer-smart-contracts-d8389ba10d81){:rel="nofollow"}. My main co-authors on launch of the smart contract best practices were Nemil Dalal, Simon de la Rouviere, Peter Borah._
