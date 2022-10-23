@@ -1,8 +1,11 @@
 ---
 title: "Ethereum's Shanghai Attacks"
 description: "The Shanghai Attacks in 2016 directly against the Ethereum protocol itself, led to Ethereum Improvement Proposals that fundamentally strengthened Ethereum to this day."
+image: /assets/images/posts/shanghai-attacks/shanghai.jpeg
 permalink: shanghai-attacks
 ---
+
+{% include fig.html img="shanghai.jpeg" alt="Shanghai skyline, half color, half monochrome" %}
 
 It all began during  [the second Ethereum Developer’s Conference, held in Shanghai.](https://media.consensys.net/2016/10/07/international-blockchain-week-2016-recap/){:rel="nofollow"}  A blackhat hacker or group started probing the Ethereum blockchain. We’ll use the term blackhat because it’s a reasonable one, as opposed to whitehat hackers who are more collaborative, for example participating in bug bounties like the  [Ethereum Bounty Program](http://bounty.ethereum.org/).  
   
