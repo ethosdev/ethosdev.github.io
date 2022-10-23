@@ -18,24 +18,24 @@ _A reading list for getting very deep on Ethereum._
 
 -   A lot of the subtleties of Ethereum. Blackhats don’t often lurk in the daylight of the obvious, but in the darkness of subtleties where much fewer whitehats roam. For example, one of the DoS attacks used “note: there is a difference between zero-balance and nonexistent!”
 
-### [Long-term gas cost changes for IO-heavy operations to mitigate transaction spam attacks](https://github.com/ethereum/eips/issues/150)
+### [EIP 150: Long-term gas cost changes for IO-heavy operations to mitigate transaction spam attacks](https://github.com/ethereum/eips/issues/150)
 
 -   Phase 1 mitigation for transaction spam attacks
 
-### [Simple replay attack protection](https://github.com/ethereum/EIPs/issues/155)
+### [EIP 155: Simple replay attack protection](https://github.com/ethereum/EIPs/issues/155)
 
 -   Replay attack prevention
 
-### [EXP cost increase](https://github.com/ethereum/EIPs/issues/160)
+### [EIP 160: EXP cost increase](https://github.com/ethereum/EIPs/issues/160)
 
 -   EXP cost increase. Fixes the “last” mispriced opcode.
 
-### [State trie clearing (invariant-preserving alternative)](https://github.com/ethereum/EIPs/issues/161)
+### [EIP 161: State trie clearing (invariant-preserving alternative)](https://github.com/ethereum/EIPs/issues/161)
 
 -   State trie clearing to purge empty accounts from the chain
--   An earlier proposal is [https://github.com/ethereum/eips/issues/158](https://github.com/ethereum/eips/issues/158)
+-   An earlier proposal is [EIP 158](https://github.com/ethereum/eips/issues/158)
 
-### [Contract code size limit](https://github.com/ethereum/EIPs/issues/170)
+### [EIP 170: Contract code size limit](https://github.com/ethereum/EIPs/issues/170)
 
 -   Limit the maximum size of contract code on the blockchain
 
