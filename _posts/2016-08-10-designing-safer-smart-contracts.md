@@ -1,7 +1,7 @@
 ---
 title: "Designing Safer Smart Contracts"
-description:
-permalink: 
+description: "Ethereum Smart Contract Best Practices for security illustrate anti-patterns, attacks, recommended solutions, and philosophy to protect against new, undiscovered attacks."
+permalink: safer-smart-contracts
 ---
 
 In a short time Ethereum has turned into the world’s second largest cryptocurrency, with a market cap of $1B and thousands of nodes around the world running its code. Developers and companies in a number of industries are exploring its potential to improve existing processes. Beyond metrics, Ethereum has pioneered the idea of easy to write smart contracts, where complex contract logic can be created on the blockchain without the need for centralized parties with a programming language similar to that used by non-blockchain developers.
