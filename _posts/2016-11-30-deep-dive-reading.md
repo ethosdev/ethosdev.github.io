@@ -4,7 +4,7 @@ description:
 permalink: deep-dive-2016
 ---
 
-_A reading list for getting very deep on Ethereum._
+_A reading list for getting very deep on Ethereum in 2016._
 
 ### [LeastAuthority/ethereum-analyses](https://github.com/LeastAuthority/ethereum-analyses){:rel="nofollow"}
 
@@ -52,4 +52,13 @@ _Some places for discussions are happening here, feel free to join in the conver
 [https://old.reddit.com/r/ethereum](https://old.reddit.com/r/ethereum){:rel="nofollow"}
 
 * * *
-_Initially published on [ConsenSys blog](https://medium.com/@ConsenSys/very-deep-dive-on-ethereum-reading-list-f5b1122e5990){:rel="nofollow"}_
+_This was first published on [ConsenSys blog.](https://medium.com/@ConsenSys/very-deep-dive-on-ethereum-reading-list-f5b1122e5990){:rel="nofollow"} The reading list is still largely relevant; Gitter has historical discussions._
+
+## **Addendum: Technical Discussions in 2022**
+
+[ethresear.ch](https://ethresear.ch){:rel="nofollow"}
+
+[Ethereum Magicians forum](https://ethereum-magicians.org){:rel="nofollow"}
+
+[Ethereum R&D Discord](https://discord.gg/VmG7Uxc){:rel="nofollow"}
+
