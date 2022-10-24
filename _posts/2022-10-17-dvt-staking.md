@@ -1,6 +1,7 @@
 ---
 title: "Easy and secure staking with Distributed Validator Technology"
 description: "Distributed Validator Technology (DVT) would require multiple signatures to command a validator, allowing a secure and easy way for mainstream users to stake on Ethereum."
+excerpt: "Distributed Validator Technology (DVT) would require multiple signatures to command a validator, allowing a secure and easy way for mainstream users to stake on Ethereum."
 permalink: dvt-staking
 ---
 
