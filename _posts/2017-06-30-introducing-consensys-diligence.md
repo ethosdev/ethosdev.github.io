@@ -1,6 +1,7 @@
 ---
 title: "Introducing ConsenSys Diligence"
 description: "ConsenSys Diligence is raising the bar for security best practices in the Ethereum ecosystem."
+excerpt: "ConsenSys Diligence is raising the bar for security best practices in the Ethereum ecosystem. We need the community to help each other and watch out for each other. That’s why we created ConsenSys Diligence."
 permalink: introducing-consensys-diligence
 ---
 
@@ -30,7 +31,7 @@ As a part of ConsenSys, **our incentives are aligned with the long-term health o
 
 ### Projects:
 
-Were looking to work with clients who:
+We're looking to work with clients who:
 
 -   Display a long-term planning horizon and vision
 -   Are willing to prioritize readiness over a sense of urgency
