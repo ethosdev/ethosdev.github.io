@@ -31,6 +31,7 @@ google_analytics: GTM-WSW57VW
 
 show_excerpts: true
 paginate: 5
+paginate_path: posts/page:num/
 
 # Build settings
 theme: minima
