@@ -1,6 +1,7 @@
 ---
 title: "Designing Safer Smart Contracts"
 description: "Ethereum Smart Contract Best Practices for security illustrate anti-patterns, attacks, recommended solutions, and philosophy to protect against new, undiscovered attacks."
+excerpt: "Ethereum Smart Contract Best Practices for security illustrate anti-patterns, attacks, recommended solutions, and philosophy to protect against new, undiscovered attacks."
 permalink: safer-smart-contracts
 ---
 
