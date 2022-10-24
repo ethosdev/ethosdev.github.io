@@ -29,11 +29,28 @@ github_username:
 
 google_analytics: GTM-WSW57VW
 
+show_excerpts: true
+paginate: 5
+paginate_path: posts/page:num/
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+
+#https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins
+#GitHub Pages uses plugins that are enabled by default and cannot be disabled:
+#jekyll-coffeescript
+#jekyll-default-layout
+#jekyll-gist
+#jekyll-github-metadata
+#jekyll-optional-front-matter
+#jekyll-paginate
+#jekyll-readme-index
+#jekyll-titles-from-headings
+#jekyll-relative-links
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

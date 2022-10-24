@@ -5,9 +5,9 @@ image: /assets/images/posts/deep-dive-2016/ethereum-reading.png
 permalink: deep-dive-2016
 ---
 
-{% include fig.html img="ethereum-reading.png" alt="Book with Ethereum logo captioned with Rapid Learning and Just In Time Support" %}
-
 _A technical reading list for getting very deep in Ethereum in 2016, including Ethereum Improvement Proposals (EIP) that fundamentally strengthened the protocol against [attacks.]({{ site.url }}{% post_url 2016-11-30-shanghai-attacks %})_
+
+{% include fig.html img="ethereum-reading.png" alt="Book with Ethereum logo captioned with Rapid Learning and Just In Time Support" %}
 
 ### [LeastAuthority/ethereum-analyses](https://github.com/LeastAuthority/ethereum-analyses){:rel="nofollow"}
 

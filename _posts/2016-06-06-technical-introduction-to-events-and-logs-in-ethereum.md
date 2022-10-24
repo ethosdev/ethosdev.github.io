@@ -1,6 +1,7 @@
 ---
 title: "Technical Introduction to Events and Logs in Ethereum"
 description: "3 main uses of Ethereum events and logs are 1) smart contract return values for user interfaces 2) asynchronous triggers with data 3) cheaper form of storage"
+excerpt: "Events and logs are important in Ethereum because they facilitate communication between smart contracts and their user interfaces. Three main uses of Ethereum events and logs are 1) smart contract return values for user interfaces 2) asynchronous triggers with data 3) cheaper form of storage"
 permalink: events-and-logs-in-ethereum
 ---
 

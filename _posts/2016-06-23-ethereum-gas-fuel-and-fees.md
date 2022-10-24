@@ -1,6 +1,7 @@
 ---
 title: "Ethereum Gas, Fuel & Fees"
 description: "Everything about Ethereum gas and fees is explained with examples, including Out of Gas exceptions, gas refunds, the block gas limit, and metering vs. fees."
+excerpt: "Everything about Ethereum gas and fees is explained with examples, including Out of Gas exceptions, gas refunds, the block gas limit, and metering vs. fees."
 permalink: ethereum-gas-fees
 ---
 

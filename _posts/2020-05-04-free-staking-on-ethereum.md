@@ -1,6 +1,7 @@
 ---
 title: "Free staking on Ethereum 2.0 and Secret Shared Validators"
 description: "Free staking on Ethereum 2.0 could be inevitable. Secret Shared Validators, like multisig for validators, are needed to help maintain network security."
+excerpt: "Free staking on Ethereum could be inevitable. Secret Shared Validators, like multisig for validators, are needed to help maintain network security."
 permalink: free-staking
 ---
 
