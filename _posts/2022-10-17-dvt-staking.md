@@ -3,6 +3,7 @@ title: "Easy and secure staking with Distributed Validator Technology"
 description: "Distributed Validator Technology (DVT) would require multiple signatures to command a validator, allowing a secure and easy way for mainstream users to stake on Ethereum."
 excerpt: "Distributed Validator Technology (DVT) would require multiple signatures to command a validator, allowing a secure and easy way for mainstream users to stake on Ethereum."
 permalink: dvt-staking
+redirect_from: dvt-staking/
 ---
 
 I dream of a market where mainstream users can stake ETH easily and with no fees. There's also a dream that staking ETH will be as easy as plugging in an Internet router. Until then, we can't escape reality that staking with an exchange or pool is easiest for mainstream users.
