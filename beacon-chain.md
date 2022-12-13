@@ -139,16 +139,18 @@ Without getting too deep, we'll discuss six topics regarding validator incentive
 
 ## **Slashable Offences**
 
-There are three slashing conditions for validators.  They can be described as a double proposal, an FFG surround vote, and an FFG double vote.  An LMD GHOST vote is not slashable.
+There are four slashing conditions for validators.  They can be described as a double proposal, an LMD GHOST double vote, an FFG surround vote, and an FFG double vote.
 
 A **double proposal** is a proposer proposing more than one block for their assigned slot.
+
+Similarly, an **LMD GHOST double vote** is a validator attesting to two different Beacon Chain heads for their assigned slot.
 
 A **surround vote** is a validator casting an FFG vote that _surrounds_ or is _surrounded by_ a previous FFG vote they made.  Here are two examples based on a scenario that a validator made an FFG vote in Epoch 5 with a source of Slot 32 and target of Slot 128:
 
 - An FFG vote in Epoch 6 with a source of Slot 64 and target of Slot 96, would be an FFG vote that was **surrounded by** their Epoch 5 vote.
 - An FFG vote in Epoch 6 with a source of Slot 0 and target of Slot 160 would **surround** their FFG vote in Epoch 5.
 
-A **double vote** is a validator casting 2 FFG votes for any two targets at the same epoch.  This can happen during a fork.
+An **FFG double vote** is a validator casting 2 FFG votes for any two targets at the same epoch.  This can happen during a fork.
 
 {% include fig.html img="Casper-FFG-Double-Vote-Example-1.png" alt="A Casper FFG double vote with both targets in Epoch 4" caption="In blue, the 2 FFG votes with both targets in Epoch 4, are a double vote when cast by the same validator." %}
 
@@ -161,6 +163,8 @@ Next, a scenario where a double vote has the same source (Epoch 0 checkpoint) an
 The upper fork has an Epoch 1 checkpoint of "block 64".  The lower fork has an Epoch 1 checkpoint of "block 63".  (Because there was no block proposed at Slot 64 in the lower fork; recall the section on Beacon Chain Checkpoints.) Voting for an Epoch 1 target of "block 64", and an Epoch 1 target of "block 63", is a double vote.  A double vote is when a validator casts FFG votes for two targets at the same epoch.
 
 An intuition behind slashing double votes is so that validators vote for one chain, rather than two or more forks.
+
+Note that an attestation, because of how they can be aggregated, can appear to be more than one vote.  The same attestation can appear in different aggregates, but it is still the same attestation and not a double vote.
 
 * * *
 
@@ -209,7 +213,9 @@ _Thank you to Danny Ryan for review and feedback on several sections, Momo Araki
 
 * * *
 
-_Updates 2022-10-01: Removed sharding, crosslinks, and old terms like eth2. Improve opening and conclusion. See [archive.org](https://web.archive.org/web/20220000000000*/ethos.dev/beacon-chain){:rel="nofollow"} for prior versions._
+_Updates 2022-12-12: Added "LMD GHOST double vote" slashing, thanks to Jiasun, Barnabé, and Ben._
+
+_2022-10-01: Removed sharding, crosslinks, and old terms like eth2. Improve opening and conclusion. See [archive.org](https://web.archive.org/web/20220000000000*/ethos.dev/beacon-chain){:rel="nofollow"} for prior versions._
 
 _2020-05-23: Staking Rewards and Penalties are clarified further and per_ v0.12 _of the Beacon Chain spec, optimal validators are not drained by the inactivity leak._
 
